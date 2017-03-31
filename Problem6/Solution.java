@@ -1,28 +1,24 @@
 public class Solution {
-	public String longestPalindrome(String s) {
-		int start = 0;
-		int end = 0;
-		int longestPalindromeLen = 0;
-		for (int i = 0; i < s.length(); i++) {
-			int lenWithCenterAtChar = findPalindromeLength(s, i, i);
-			int lenWithCenterBetween = findPalindromeLength(s, i, i + 1);
-			int localLongestPalidromelen = Math.max(lenWithCenterAtChar, lenWithCenterBetween);
-			if (localLongestPalidromelen > longestPalindromeLen) {
-				longestPalindromeLen = localLongestPalidromelen;
-				start = i - (localLongestPalidromelen - 1) / 2;
-				end = i + (localLongestPalidromelen / 2);
-			}
+	public String convert(String s, int numRows) {
+		if (numRows <= 1)
+			return s;
+		StringBuilder[] sbArr = new StringBuilder[numRows];
+		for (int i =0; i < numRows; i++) {
+			sbArr[i] = new StringBuilder("");
 		}
-		return s.substring(start, end + 1);
-	}
-
-	private int findPalindromeLength(String str, int start, int end) {
-		int len = 0;
-		while (start >= 0 && end < str.length() && str.charAt(start) == str.charAt(end)) {
-			end++;
-			start--;
+		int idx = 0;
+		int incr = 1;
+		int n = s.length();
+		for (int i = 0; i < n; i++) {
+			sbArr[idx].append(s.charAt(i));
+			if (idx == 0) incr = 1;
+			if (idx == numRows-1) incr = -1;
+			idx += incr;
 		}
-		len = end - start - 1;
-		return len;
+		String result = "";
+		for (StringBuilder sb : sbArr) {
+			result += sb;
+		}
+		return result;
 	}
 }
