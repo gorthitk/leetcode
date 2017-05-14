@@ -1,35 +1,31 @@
 public class Solution {
 
 	public boolean checkInclusion(String s1, String s2) {
-		int[] counts = new int[26];
-		for (char c : s1.toCharArray()) {
-			counts[c-'a']++;
-		}
-		
-		char[] stream = s2.toCharArray();
-		int i = 0;
-		int n = s2.length();
-		while(i < n) {
-			while(i < n && counts[stream[i]-'a'] == 0) {
-				i++;
-			}
-			if (i ==n || n-i < s1.length()) {
-				break;
-			}
-			int[] localCounts = new int[26];
-			while(i < n && counts[stream[i]-'a'] != 0 && localCounts[stream[i]-'a'] < counts[stream[i]-'a']) {
-				localCounts[stream[i]-'a']++;
-				i++;
-			}
-			boolean exists = true;
-			for (int j = 0;j < 26; j++) {
-				if (counts[j]!= localCounts[j]) {
-					exists = false;
-					break;
-				}
-			}
-			if (exists) return true;
-		}
-		return false;
-	}
+        int[] map = new int[256];
+        for(Character ch : s1.toCharArray())map[ch] ++;
+
+        int start = 0;
+        int end = 0;
+        int count = s1.length();
+
+        while(end < s2.length()) {
+            char ch = s2.charAt(end);
+            end ++;
+
+            if(map[ch] > 0)count --;
+            map[ch] --;
+
+            if(count == 0)return true;
+
+            if(end - start == s1.length()) {
+                ch = s2.charAt(start);
+                start ++;
+
+                if(map[ch] >= 0)count ++;
+                map[ch] ++;
+            }
+        }
+
+        return false;
+    }
 }
