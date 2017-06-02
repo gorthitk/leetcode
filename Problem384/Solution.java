@@ -1,17 +1,30 @@
+import java.util.Random;
+
 public class Solution {
-	public boolean isSubsequence(String s, String t) {
-		if (s.length() > t.length())
-			return false;
-		int i = 0;
-		int j = 0;
-		while (i < s.length()) {
-			while (j < t.length() && t.charAt(j) != s.charAt(i))
-				j++;
-			if (j >= t.length())
-				return false;
-			i++;
-			j++;
+	int[] nums;
+
+	public Solution(int[] nums) {
+		this.nums = nums;
+	}
+
+	public int[] reset() {
+		return nums;
+	}
+
+	public int[] shuffle() {
+		int[] shuffle = nums.clone();
+		Random rand = new Random();
+		for (int i = 0; i < nums.length; i++) {
+			int idx = rand.nextInt(i + 1);
+			swap(i, idx, shuffle);
 		}
-		return true;
+		return shuffle;
+	}
+
+	private void swap(int i, int idx, int[] shuffle) {
+		int tmp = shuffle[i];
+		shuffle[i] = shuffle[idx];
+		shuffle[idx] = tmp;
+
 	}
 }
