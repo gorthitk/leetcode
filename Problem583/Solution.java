@@ -1,3 +1,7 @@
+/*
+ * Find the length of the common subsequence
+ * Since only delete operation possible, subtract the length of common subsequence from sum of lengths of word1 and word2.
+ */
 public class Solution {
 	public int minDistance(String word1, String word2) {
 		int[][] dp = new int[word1.length() + 1][word2.length() + 1]; // Find Length of Common Subsequence
