@@ -1,30 +1,39 @@
-import java.util.HashMap;
+import java.util.*;
 
 public class Solution {
+	public String decodeString(String s) {
+		Stack<String> words = new Stack<>();
+		Stack<Integer> counts = new Stack<>();
+		words.push("");
+		int i = 0;
+		while (i < s.length()) {
+			char c = s.charAt(i);
+			if (Character.isDigit(c)) {
+				int end = i;
+				while (Character.isDigit(s.charAt(end))) {
+					end++;
+				}
+				int count = Integer.parseInt(s.substring(i, end));
+				counts.push(count);
+				i = end-1;
+			} else if (c == '[') {
+				words.push("");
+			} else if (c == ']') {
+				StringBuilder sb = new StringBuilder();
+				int count = counts.pop();
+				String str = words.pop();
+				while (count > 0) {
+					sb.append(str);
+					count--;
+				}
+				words.push(words.pop() + sb.toString());
 
-	public int lengthOfLongestSubstring(String s) {
-		if (s == null || s.length() == 0)
-			return 0;
-
-		int maxLen = 0;
-		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-		int start = 0;
-		int idx = 0;
-		while (idx <= s.length()) {
-			if (idx == s.length()) {
-				int len = idx - start;
-				maxLen = Math.max(maxLen, len);
-				break;
+			} else {
+				words.push(words.pop() + c);
 			}
-			char c = s.charAt(idx);
-			if (map.containsKey(c) && map.get(c) >= start) {
-				int len = idx - start;
-				maxLen = Math.max(maxLen, len);
-				start = map.get(c) + 1;
-			}
-			map.put(c, idx);
-			idx++;
+			i++;
 		}
-		return maxLen;
+
+		return words.pop();
 	}
 }
