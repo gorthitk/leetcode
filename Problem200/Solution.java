@@ -1,29 +1,25 @@
 public class Solution {
 	public int numIslands(char[][] grid) {
-		if (grid == null || grid.length == 0 || grid[0].length == 0)
-			return 0;
-		int row = grid.length;
-		int col = grid[0].length;
-		int count = 0;
-		boolean[][] visited = new boolean[row][col];
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
-				if (grid[i][j] == '1' && !visited[i][j]) {
+		if (grid == null || grid.length == 0 || grid[0].length == 0) return 0;
+		int count = 0, m = grid.length, n = grid[0].length;
+		for (int i = 0; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				if (grid[i][j] == '1') {
 					count++;
-					mapTheIsland(grid, visited, row, col, i, j);
+					dfs(i, j, grid, m, n);
 				}
 			}
 		}
 		return count;
 	}
 
-	private void mapTheIsland(char[][] grid, boolean[][] visited, int row, int col, int i, int j) {
-		if (i < 0 || i >= row || j < 0 || j >= col || visited[i][j] || grid[i][j] == '0')
+	private void dfs(int i, int j, char[][] grid, int m, int n) {
+		if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == '0')
 			return;
-		visited[i][j] = true;
-		mapTheIsland(grid, visited, row, col, i+1, j);
-		mapTheIsland(grid, visited, row, col, i-1, j);
-		mapTheIsland(grid, visited, row, col, i, j+1);
-		mapTheIsland(grid, visited, row, col, i, j-1);
+		grid[i][j] = '0';
+		dfs(i + 1, j, grid, m, n);
+		dfs(i - 1, j, grid, m, n);
+		dfs(i, j + 1, grid, m, n);
+		dfs(i, j - 1, grid, m, n);
 	}
 }
