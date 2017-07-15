@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class Solution {
@@ -48,6 +49,18 @@ public class Solution {
 					break;
 				}
 			}
+		}
+		return len;
+	}
+	
+	public int lengthOfLongestSubstring(String s) {
+		int len = 0;
+		Map<Character, Integer> indices = new HashMap<>();
+		for (int i = 0, j = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			j = Math.max(j, indices.getOrDefault(c, 0));
+			len = Math.max(len, i - j + 1);
+			indices.put(c, i+1);
 		}
 		return len;
 	}
