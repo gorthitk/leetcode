@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solution {
 
@@ -26,5 +28,27 @@ public class Solution {
 			idx++;
 		}
 		return maxLen;
+	}
+	
+	public int lengthOfLongestSubstring(String s) {
+		int len = 0;
+		if (s == null || s.length() == 0)
+			return len;
+		for (int i = 0; i < s.length(); i++) {
+			if (s.length()-i < len) break;
+
+			Set<Character> present = new HashSet<>();
+			int currLen = 0;
+			for (int j = i; j < s.length(); j++) {
+				char chr = s.charAt(j);
+				if (present.add(chr)) {
+					currLen++;
+					len = Math.max(len, currLen);
+				} else {
+					break;
+				}
+			}
+		}
+		return len;
 	}
 }
