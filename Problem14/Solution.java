@@ -1,19 +1,15 @@
+import java.util.Arrays;
+
 public class Solution {
-    public String longestCommonPrefix(String[] strs) {
-        if (strs == null || strs.length == 0) return "";
-        String first = strs[0];
-        int len = first.length();
-        int idx = first.length();
-        for (int i = 1; i < strs.length; i++) {
-        	int j = 0;
-        	int k =0;
-        	String str = strs[i];
-        	while (j < len && k < str.length() && str.charAt(k) == first.charAt(j)) {
-        		j++;
-        		k++;
-        	}
-        	idx = Math.min(idx,j);
-        }
-        return strs[0].substring(0, idx);
-    }
+	public String longestCommonPrefix(String[] strs) {
+		if (strs == null || strs.length == 0)
+			return "";
+		Arrays.sort(strs, (a, b) -> a.compareTo(b));
+		int j = 0, k = 0;
+		while (j < strs[0].length() && k < strs[strs.length-1].length() && strs[0].charAt(j) == strs[strs.length-1].charAt(k)) {
+			j++;
+			k++;
+		}
+		return strs[0].substring(0, j);
+	}
 }
