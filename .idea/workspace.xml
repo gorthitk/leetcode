@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d60d0ab3-65ad-49f4-b594-c1e1299227e2" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Problem783/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Problem783/Solution.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Problem 739/README.md" afterPath="$PROJECT_DIR$/Problem 739/README.md" />
-      <change beforePath="$PROJECT_DIR$/Problem 739/Solution.java" afterPath="$PROJECT_DIR$/Problem 739/Solution.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,12 +16,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Problem 739/README.md">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Problem783/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -29,12 +29,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Problem 739/Solution.java">
+      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Problem783/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="253">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding>
+                <element signature="e#58#59#0" expanded="true" />
+                <element signature="e#103#104#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,6 +99,8 @@
         <option value="$PROJECT_DIR$/Problem692/README.md" />
         <option value="$PROJECT_DIR$/Problem 739/README.md" />
         <option value="$PROJECT_DIR$/Problem 739/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem783/README.md" />
+        <option value="$PROJECT_DIR$/Problem783/Solution.java" />
       </list>
     </option>
   </component>
@@ -153,6 +158,16 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem760" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem783" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem796" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -177,11 +192,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Problem783" />
       <recent name="$PROJECT_DIR$/Problem 739" />
       <recent name="$PROJECT_DIR$/Problem692" />
       <recent name="$PROJECT_DIR$/Problem811" />
       <recent name="$PROJECT_DIR$/Problem796" />
-      <recent name="$PROJECT_DIR$/Problem804" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -302,12 +317,12 @@
       <workItem from="1515907373647" duration="1465000" />
       <workItem from="1516006673485" duration="14000" />
       <workItem from="1522518217120" duration="36000" />
-      <workItem from="1522851296639" duration="4310000" />
+      <workItem from="1522851296639" duration="7760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17027000" />
+    <option name="totallyTimeSpent" value="20477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -380,23 +395,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Problem740/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem740/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Problem653/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -802,7 +800,7 @@
         <state relative-caret-position="420">
           <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -830,10 +828,32 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
-            <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem783/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem783/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#58#59#0" expanded="true" />
+            <element signature="e#103#104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
