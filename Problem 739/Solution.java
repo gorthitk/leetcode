@@ -1,21 +1,44 @@
-class Solution {
-	public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
-		int l = image.length, b = image[0].length;
-		boolean[][] visited = new boolean[l][b];
-		fill(visited, image, sr, sc, newColor, image[sr][sc]);
-		return image;
+class Solution
+{
+	// Brute force solution
+	public int[] dailyTemperatures(int[] temperatures)
+	{
+		// Brute force solution
+		final int numOfTemperatures = temperatures.length;
+		final int[] nextHighestTemperature = new int[numOfTemperatures];
+		for (int i = 0; i < numOfTemperatures; i--)
+		{
+			int j = i + 1;
+			while (j <= numOfTemperatures - 1)
+			{
+				if (temperatures[j] > temperatures[i])
+				{
+					nextHighestTemperature[i] = j - i;
+					break;
+				}
+				j++;
+			}
+		}
+		return nextHighestTemperature;
 	}
 
-	private void fill(boolean[][] visited, int[][] image, int x, int y, int newColor, int oldColor) {
-		if (x < 0 || y < 0 || x >= visited.length || y >= visited[0].length || visited[x][y] || image[x][y] != oldColor)
+	// Using stacks
+	public int[] dailyTemperatures(int[] temperatures)
+	{
+		// Brute force solution
+		final int numOfTemperatures = temperatures.length;
+		final int[] nextHighestTemperature = new int[numOfTemperatures];
+		final Stack<Integer> maxTemperatures = new Stack<>();
+
+		for (int i = numOfTemperatures -1; i >= 0; i--)
 		{
-			return;
+			while (!maxTemperatures.isEmpty() && temperatures[i] >= temperatures[maxTemperatures.peek()])
+			{
+				maxTemperatures.pop();
+			}
+			nextHighestTemperature[i] = maxTemperatures.isEmpty() ? 0 : maxTemperatures.peek() - i;
+			maxTemperatures.push(i);
 		}
-		visited[x][y] = true;
-		image[x][y] = newColor;
-		fill(visited, image, x-1, y, newColor, oldColor);
-		fill(visited, image, x+1, y, newColor, oldColor);
-		fill(visited, image, x, y+1, newColor, oldColor);
-		fill(visited, image, x, y-1, newColor, oldColor);
+		return nextHighestTemperature;
 	}
 }

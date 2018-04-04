@@ -1,13 +1,11 @@
-### 733. Flood Fill
+### 739. Daily Temperatures
   
 ### Description
-    An image is represented by a 2-D array of integers, each integer representing the pixel value of the image (from 0 to 65535).
-
-    Given a coordinate (sr, sc) representing the starting pixel (row and column) of the flood fill, and a pixel value newColor, "flood fill" the image.
-
-    To perform a "flood fill", consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color as the starting pixel), and so on. Replace the color of all of the aforementioned pixels with the newColor.
-
-    At the end, return the modified image.
+    Given a list of daily temperatures, produce a list that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.
+   
+    For example, given the list temperatures = [73, 74, 75, 71, 69, 72, 76, 73], your output should be [1, 1, 4, 2, 1, 1, 0, 0].
+   
+    Note: The length of temperatures will be in the range [1, 30000]. Each temperature will be an integer in the range [30, 100]. 
     
 ### LeetCode URL
-    https://leetcode.com/problems/flood-fill/description/
+    https://leetcode.com/problems/daily-temperatures/description/
