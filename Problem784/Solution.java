@@ -1,39 +1,38 @@
+import java.util.*;
+
 class Solution
 {
-	public int minDiffInBST(TreeNode root)
+	public List<String> letterCasePermutation(String S)
 	{
-		return _calculateMin(root, null, null);
+		final List<String> result = new ArrayList<>();
+		_findPermutations(S.toCharArray(), 0, result, Arrays.asList(""));
+		return result;
 	}
 
-	private int _calculateMin(TreeNode root, Integer lower, Integer upper)
+	private void _findPermutations(char[] chars, int i, List<String> result, List<String> partialResult)
 	{
-		if (root == null)
+		if (i == chars.length)
 		{
-			return 0;
+			result.addAll(partialResult);
+			return;
 		}
 
-		int minimumDifference = Integer.MAX_VALUE;
+		final char chr = chars[i];
+		final Set<Character> permutations = new HashSet<>();
 
-		if (lower != null)
+		if (Character.isAlphabetic(chr))
 		{
-			minimumDifference = Math.min(root.val - lower, minimumDifference);
+			permutations.add(Character.toUpperCase(chr));
+			permutations.add(Character.toLowerCase(chr));
+		}
+		else
+		{
+			permutations.add(chr);
 		}
 
-		if (upper != null)
-		{
-			minimumDifference = Math.min(upper - root.val, minimumDifference);
-		}
+		final ArrayList<String> newPartialResult = new ArrayList<>();
+		permutations.forEach(c -> partialResult.forEach(s -> newPartialResult.add(s + c)));
 
-		if (root.left != null)
-		{
-			minimumDifference = Math.min(minimumDifference, _calculateMin(root.left, lower, root.val));
-		}
-
-		if (root.right != null)
-		{
-			minimumDifference = Math.min(minimumDifference, _calculateMin(root.right, root.val, upper));
-		}
-
-		return minimumDifference == Integer.MAX_VALUE ? 0 : minimumDifference;
+		_findPermutations(chars, i + 1, result, newPartialResult);
 	}
 }

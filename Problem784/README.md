@@ -1,7 +1,7 @@
-### 783. Minimum Distance Between BST Nodes
+### 784. Letter Case Permutation
  
 ### Description
-    Given a Binary Search Tree (BST) with the root node root, return the minimum difference between the values of any two different nodes in the tree. 
+    Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
    
 ### LeetCode URL
-    https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/ 
+    https://leetcode.com/problems/letter-case-permutation/description/ 
