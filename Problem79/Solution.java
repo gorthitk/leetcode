@@ -1,36 +1,55 @@
-public class Solution
+class Solution
 {
     public boolean exist(char[][] board, String word)
     {
+        int a = board.length;
+        int b = board[0].length;
 
-        if (board == null || board.length == 0 || board[0].length == 0 || word == null || word.length() == 0)
-            return false;
-        for (int i = 0; i < board.length; i++)
+        for (int i = 0; i < a; i++)
         {
-            for (int j = 0; j < board[0].length; j++)
+            for (int j = 0; j < b; j++)
             {
-                if (checkIfExists(board, i, j, word, 0))
+                if (matches(i, j, board, word, 0, a, b))
                 {
                     return true;
                 }
             }
         }
+
         return false;
     }
 
-    private boolean checkIfExists(char[][] board, int i, int j, String word, int k)
+    private int[][] directions = { { -1, 0 }, { 1, 0 }, { 0, 1 }, { 0, -1 } };
+
+    private boolean matches(int i, int j, char[][] board, String word, int index, int a, int b)
     {
-        if (k == word.length())
+
+        if (index == word.length())
+        {
             return true;
-        if (i < 0 || j < 0 || i >= board.length || j >= board[0].length)
+        }
+
+        if (i >= a || j >= b || i < 0 || j < 0)
+        {
             return false;
-        if (word.charAt(k) != board[i][j])
-            return false;
-        char tmp = board[i][j];
-        board[i][j] = '!';
-        boolean exists = checkIfExists(board, i + 1, j, word, k + 1) || checkIfExists(board, i - 1, j, word, k + 1)
-                || checkIfExists(board, i, j + 1, word, k + 1) || checkIfExists(board, i, j - 1, word, k + 1);
-        board[i][j] = tmp;
-        return exists;
+        }
+
+
+        char curr = word.charAt(index);
+        if (board[i][j] == curr)
+        {
+            board[i][j] = '*';
+            for (int[] direction : directions)
+            {
+                if (matches(i + direction[0], j + direction[1], board, word, index + 1, a , b))
+                {
+                    return true;
+                }
+            }
+
+            board[i][j] = curr;
+        }
+
+        return false;
     }
 }

@@ -1,91 +1,110 @@
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
-public class Solution
+class Solution
 {
+    private int n;
+    private int m;
+
     public List<String> findWords(char[][] board, String[] words)
     {
-        Trie trie = new Trie(words);
-        if (board == null || board.length == 0 || board[0].length == 0)
-            return new ArrayList<>();
-        HashSet<String> result = new HashSet<>();
-        boolean[][] added = new boolean[board.length][board[0].length];
+        n = board.length;
+        m = board[0].length;
 
-        for (int i = 0; i < board.length; i++)
+        final Trie root = _buildTrie(words);
+
+
+        final List<String> result = new ArrayList<>();
+        for (int i = 0; i < n; i++)
         {
-            for (int j = 0; j < board[0].length; j++)
+            for (int j = 0; j < m; j++)
             {
-                dfs(board, i, j, added, trie, "", result);
+                _find(i, j, board, root, result);
+                if (result.size() == words.length)
+                {
+                    break;
+                }
             }
         }
-        return new ArrayList<>(result);
+
+        return result;
     }
 
-    private void dfs(char[][] board, int i, int j, boolean[][] added, Trie trie, String current, HashSet<String> result)
+
+    private void _find(final int i, final int j, final char[][] board, final Trie dictionary, final List<String> result)
     {
-        if (i < 0 || j < 0 || i >= board.length || j >= board[0].length || added[i][j])
-            return;
-        added[i][j] = true;
-        String next = current + board[i][j];
-        Object[] check = trie.check(next);
-        if ((boolean) check[0])
+        if (i < 0 || j < 0 || i >= n || j >= m)
         {
-            if ((boolean) check[1])
-            {
-                result.add(next);
-            }
-            dfs(board, i + 1, j, added, trie, next, result);
-            dfs(board, i - 1, j, added, trie, next, result);
-            dfs(board, i, j + 1, added, trie, next, result);
-            dfs(board, i, j - 1, added, trie, next, result);
+            return;
         }
-        added[i][j] = false;
+
+        char ch = board[i][j];
+
+        if (ch > 'z' || ch < 'a')
+        {
+            return;
+        }
+
+        final Trie next = dictionary.children[ch - 'a'];
+
+        if (next == null)
+        {
+            return;
+        }
+
+        if (next.isEnd && !next.added)
+        {
+            result.add(next.word);
+            next.added = true;
+        }
+
+        board[i][j] = '#';
+
+        _find(i + 1, j, board, next, result);
+        _find(i - 1, j, board, next, result);
+        _find(i, j + 1, board, next, result);
+        _find(i, j - 1, board, next, result);
+
+
+        board[i][j] = ch;
+    }
+
+
+    private Trie _buildTrie(final String[] words)
+    {
+        final Trie root = new Trie();
+
+        for (String word : words)
+        {
+            _populate(root, word);
+        }
+
+        return root;
+    }
+
+    private void _populate(final Trie root, String word)
+    {
+        Trie current = root;
+
+        for (char c : word.toCharArray())
+        {
+            if (current.children[c - 'a'] == null)
+            {
+                current.children[c - 'a'] = new Trie();
+            }
+
+            current = current.children[c - 'a'];
+        }
+
+        current.isEnd = true;
+        current.word = word;
     }
 
     class Trie
     {
-        Node root;
-
-        public Trie(String[] words)
-        {
-            root = new Node();
-            for (String word : words)
-            {
-                Node current = root;
-                for (int i = 0; i < word.length(); i++)
-                {
-                    int chrIdx = word.charAt(i) - 'a';
-                    if (current.children[chrIdx] == null)
-                    {
-                        current.children[chrIdx] = new Node();
-                    }
-                    current = current.children[chrIdx];
-                    if (i == word.length() - 1)
-                        current.endOfWord = true;
-                }
-            }
-        }
-
-        public Object[] check(String word)
-        {
-            Node current = root;
-            for (int i = 0; i < word.length(); i++)
-            {
-                int chrIdx = word.charAt(i) - 'a';
-                if (current.children[chrIdx] == null)
-                {
-                    return new Object[] { false, false };
-                }
-                current = current.children[chrIdx];
-            }
-            return new Object[] { true, current.endOfWord };
-        }
-    }
-
-    class Node
-    {
-        Node[] children = new Node[26];
-        boolean endOfWord = false;
+        Trie[] children = new Trie[26];
+        boolean isEnd;
+        String word;
+        boolean added;
     }
 }
