@@ -1,0 +1,13 @@
+### Problem 1231. Divide Chocolate
+
+### Description
+    You have one chocolate bar that consists of some chunks. Each chunk has its own sweetness given by the array sweetness.
+    
+    You want to share the chocolate with your K friends so you start cutting the chocolate bar into K+1 pieces using K cuts, each piece consists of some consecutive chunks.
+    
+    Being generous, you will eat the piece with the minimum total sweetness and give the other pieces to your friends.
+    
+    Find the maximum total sweetness of the piece you can get by cutting the chocolate bar optimally.
+    
+### LeetCode URL
+    https://leetcode.com/problems/divide-chocolate/
