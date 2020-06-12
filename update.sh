@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 rm -rf README.md
-echo "# leetcode" >> README.md
-echo "My Solutions to leetcode problems" >> README.md
+echo "Solutions to leetcode problems" >> README.md
+
+DIRCOUNT="$(find . -maxdepth 1 -type d | wc -l)"
+echo "Number of problems solved : $DIRCOUNT" >> README.md
 
 # Render the table
 
