@@ -1,5 +1,5 @@
 Solutions to leetcode problems
-<br />Number of problems solved :      283
+<br />Number of problems solved :      284
 <table><thead><tr><th>Question</th> <th>Link to solution to</th></tr></thead><tbody>
 <tr>
 <td> 1. Two Sum </td>
@@ -88,6 +88,10 @@ Solutions to leetcode problems
 <tr>
 <td> 120. Triangle </td>
 <td> https://github.com/jetsasank/leetcode/tree/master/Problem120 </td>
+</tr>
+<tr>
+<td> 121. Best Time to Buy and Sell Stock </td>
+<td> https://github.com/jetsasank/leetcode/tree/master/Problem121 </td>
 </tr>
 <tr>
 <td> 122. Best Time to Buy and Sell Stock II </td>
