@@ -1,5 +1,5 @@
 Solutions to leetcode problems
-<br />Number of problems solved :      282
+<br />Number of problems solved :      283
 <table><thead><tr><th>Question</th> <th>Link to solution to</th></tr></thead><tbody>
 <tr>
 <td> 1. Two Sum </td>
@@ -92,6 +92,10 @@ Solutions to leetcode problems
 <tr>
 <td> 122. Best Time to Buy and Sell Stock II </td>
 <td> https://github.com/jetsasank/leetcode/tree/master/Problem122 </td>
+</tr>
+<tr>
+<td> 1231. Divide Chocolate </td>
+<td> https://github.com/jetsasank/leetcode/tree/master/Problem1231 </td>
 </tr>
 <tr>
 <td> 124. Binary Tree Maximum Path Sum </td>
