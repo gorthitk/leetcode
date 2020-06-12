@@ -1,5 +1,5 @@
 Solutions to leetcode problems
-<br />Number of problems solved :      284
+<br />Number of problems solved :      285
 <table><thead><tr><th>Question</th> <th>Link to solution to</th></tr></thead><tbody>
 <tr>
 <td> 1. Two Sum </td>
@@ -416,6 +416,10 @@ Solutions to leetcode problems
 <tr>
 <td> 28. Implement strStr() </td>
 <td> https://github.com/jetsasank/leetcode/tree/master/Problem28 </td>
+</tr>
+<tr>
+<td> 281. Zigzag Iterator </td>
+<td> https://github.com/jetsasank/leetcode/tree/master/Problem281 </td>
 </tr>
 <tr>
 <td> 289. Game of Life </td>
