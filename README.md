@@ -105,10 +105,10 @@ Solutions in the following languages :
 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/#/description) | [Java](./Problem168/Solution.java) |
 169 | [Majority Element](https://leetcode.com/problems/majority-element/#/description) | [Java](./Problem169/Solution.java) |
 172 | [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/#/description) | [Java](./Problem172/Solution.java) |
-192 | [Word Frequency](https://leetcode.com/problems/word-frequency/#/description) |  |
-193 | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/#/description) |  |
-195 | [Tenth Line](https://leetcode.com/problems/tenth-line/#/description) |  |
-198 | [### Problem z198. House Robber](https://leetcode.com/problems/house-robber/#/description) | [Golang](./Problem198/Solution.go),[Java](./Problem198/Solution.java) |
+192 | [Word Frequency](https://leetcode.com/problems/word-frequency/#/description) | [Bash](./Problem192/Solution.sh) |
+193 | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/#/description) | [Bash](./Problem193/Solution.sh) |
+195 | [Tenth Line](https://leetcode.com/problems/tenth-line/#/description) | [Bash](./Problem195/Solution.sh) |
+198 | [198. House Robber](https://leetcode.com/problems/house-robber/#/description) | [Golang](./Problem198/Solution.go),[Java](./Problem198/Solution.java) |
 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/#/description) | [Golang](./Problem199/Solution.go),[Java](./Problem199/Solution.java) |
 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/#/description) | [Java](./Problem200/Solution.java) |
 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/#/description) | [Java](./Problem201/Solution.java) |
