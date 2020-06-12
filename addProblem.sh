@@ -6,7 +6,6 @@ mkdir Problem${problemNumber}
 
 cd Problem${problemNumber}
 
-touch README.md
 touch Solution.java
 
 cd ..
