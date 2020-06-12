@@ -1,4 +1,4 @@
-### 740. Delete and Earn
+### Problem 740. Delete and Earn
 
 ### Description
     Given an array nums of integers, you can perform operations on the array.

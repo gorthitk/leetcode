@@ -1,4 +1,4 @@
-### 1324. Print Words Vertically
+### Problem 1324. Print Words Vertically
 
 ### Description
     Given a string s. Return all the words vertically in the same order in which they appear in s.

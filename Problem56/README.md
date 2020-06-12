@@ -1,4 +1,4 @@
-### 56. Merge Intervals
+### Problem 56. Merge Intervals
 
 ### Description
 	Given a collection of intervals, merge all overlapping intervals.

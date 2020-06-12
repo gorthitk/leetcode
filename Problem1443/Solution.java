@@ -9,7 +9,7 @@ class Solution
     {
         final Map<Integer, List<Integer>> graph = new HashMap<>();
 
-        for(int i = 0; i < edges.length; i++)
+        for (int i = 0; i < edges.length; i++)
         {
             graph.computeIfAbsent(edges[i][0], k -> new ArrayList<>()).add(edges[i][1]);
             graph.computeIfAbsent(edges[i][1], k -> new ArrayList<>()).add(edges[i][0]);

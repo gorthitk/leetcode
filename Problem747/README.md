@@ -1,4 +1,4 @@
-### 747. Largest Number Greater Than Twice of Others 
+### Problem 747. Largest Number Greater Than Twice of Others 
 
 ### Description
     In a given integer array nums, there is always exactly one largest element.

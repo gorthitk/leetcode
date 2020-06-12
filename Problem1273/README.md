@@ -1,4 +1,4 @@
-### 1273. Delete Tree Nodes
+### Problem 1273. Delete Tree Nodes
 
 ### Description
     A tree rooted at node 0 is given as follows:

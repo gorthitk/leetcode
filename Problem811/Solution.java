@@ -14,7 +14,7 @@ class Solution
             int count = Integer.valueOf(line[0]);
             String[] domains = line[1].split("\\.");
             String parentDomain = "";
-            for (int i = domains.length-1; i >=0 ; i--)
+            for (int i = domains.length - 1; i >= 0; i--)
             {
                 parentDomain = domains[i] + (parentDomain.equals("") ? parentDomain : "." + parentDomain);
                 counts.put(parentDomain, counts.getOrDefault(parentDomain, 0) + count);

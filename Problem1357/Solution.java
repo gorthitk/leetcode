@@ -5,6 +5,7 @@ class Cashier
     private final double discount;
 
     private int counter = 0;
+
     public Cashier(int n, int discount, int[] products, int[] prices)
     {
         this.n = n;

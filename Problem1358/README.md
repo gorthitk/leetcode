@@ -1,4 +1,4 @@
-### 1358. Number of Substrings Containing All Three Characters
+### Problem 1358. Number of Substrings Containing All Three Characters
 
 ### Description
     Given a string s consisting only of characters a, b and c.

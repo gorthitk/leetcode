@@ -7,7 +7,7 @@ class Solution
 {
     public int getImportance(List<Employee> employees, int id)
     {
-        return _getImportance(employees.stream().collect(Collectors.toMap((Employee e) -> e.id , Function.identity())), id);
+        return _getImportance(employees.stream().collect(Collectors.toMap((Employee e) -> e.id, Function.identity())), id);
     }
 
     private int _getImportance(Map<Integer, Employee> employeeById, int id)

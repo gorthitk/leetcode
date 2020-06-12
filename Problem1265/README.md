@@ -1,4 +1,4 @@
-### 1265. Print Immutable Linked List in Reverse
+### Problem 1265. Print Immutable Linked List in Reverse
 
 ### Description
     You are given an immutable linked list, print out all values of each node in reverse with the help of the following interface:

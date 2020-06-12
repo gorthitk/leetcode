@@ -1,4 +1,4 @@
-### 507. Perfect Number
+### Problem 507. Perfect Number
 
 ### Description 
 	We define the Perfect Number is a positive integer that is equal to the sum of all its positive divisors except itself.

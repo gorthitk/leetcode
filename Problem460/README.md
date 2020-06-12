@@ -1,4 +1,4 @@
-### 460. LFU Cache
+### Problem 460. LFU Cache
 
 ### Description 
 	Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and put.

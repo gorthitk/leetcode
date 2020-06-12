@@ -1,4 +1,4 @@
-### 504. Base 7
+### Problem 504. Base 7
 
 ### Description 
 	Given an integer, return its base 7 string representation.

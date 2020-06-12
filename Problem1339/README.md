@@ -1,4 +1,4 @@
-### 1339. Maximum Product of Splitted Binary Tree
+### Problem 1339. Maximum Product of Splitted Binary Tree
 
 ### Description
     Given a binary tree root. Split the binary tree into two subtrees by removing 1 edge such that the product of the sums of the subtrees are maximized.

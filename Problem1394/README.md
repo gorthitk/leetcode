@@ -1,4 +1,4 @@
-### 1394. Find Lucky Integer in an Array
+### Problem 1394. Find Lucky Integer in an Array
 
 ### Description
     Given an array of integers arr, a lucky integer is an integer which has a frequency in the array equal to its value.

@@ -1,4 +1,4 @@
-### 289. Game of Life
+### Problem 289. Game of Life
 
 ### Description
 	According to the Wikipedia's article: "The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970."

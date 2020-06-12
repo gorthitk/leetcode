@@ -1,4 +1,4 @@
-### 1429. First Unique Number
+### Problem 1429. First Unique Number
 
 ### Description
     You have a queue of integers, you need to retrieve the first unique integer in the queue.

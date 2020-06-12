@@ -1,4 +1,4 @@
-### 1272. Remove Interval
+### Problem 1272. Remove Interval
 
 ### Description
     Given a sorted list of disjoint intervals, each interval intervals[i] = [a, b] represents the set of real numbers x such that a <= x < b.

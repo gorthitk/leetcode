@@ -22,15 +22,14 @@ class Solution
         int setSize = 0;
         int newSize = 0;
 
-
         for (int i = n; i >= 0 && newSize < n / 2; i--)
         {
             int numberOfSets = absCounter[i];
 
-            while (newSize < n/2 && numberOfSets > 0)
+            while (newSize < n / 2 && numberOfSets > 0)
             {
                 setSize++;
-                newSize+= i;
+                newSize += i;
                 numberOfSets--;
             }
         }

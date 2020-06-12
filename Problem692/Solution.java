@@ -1,13 +1,12 @@
 import java.util.*;
+import java.util.Map.Entry;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.Map.Entry;
 
 class Solution
 {
     private static final Comparator<Entry<String, Long>> COMPARATOR =
             (o1, o2) -> o1.getValue().equals(o2.getValue()) ? o1.getKey().compareTo(o2.getKey()) : Long.compare(o2.getValue(), o1.getValue());
-
 
     public List<String> topKFrequent(String[] words, int k)
     {

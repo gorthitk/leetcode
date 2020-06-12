@@ -1,4 +1,4 @@
-### 766. Toeplitz Matrix
+### Problem 766. Toeplitz Matrix
 
 ### Description
     A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same element.

@@ -1,4 +1,4 @@
-### 1471. The k Strongest Values in an Array
+### Problem 1471. The k Strongest Values in an Array
 
 ### Description
     Given an array of integers arr and an integer k.

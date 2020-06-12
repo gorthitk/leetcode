@@ -1,4 +1,4 @@
-### 1357. Apply Discount Every n Orders
+### Problem 1357. Apply Discount Every n Orders
 
 ### Description
     There is a sale in a supermarket, there will be a discount every n customer.

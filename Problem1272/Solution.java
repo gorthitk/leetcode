@@ -11,7 +11,6 @@ class Solution
             final int start = intervals[i][0];
             final int end = intervals[i][1];
 
-
             if (start >= toBeRemoved[0] && end <= toBeRemoved[1])
             {
                 continue;

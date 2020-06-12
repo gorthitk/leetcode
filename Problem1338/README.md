@@ -1,4 +1,4 @@
-### 1338. Reduce Array Size to The Half
+### Problem 1338. Reduce Array Size to The Half
 
 ### Description
     Given an array arr.  You can choose a set of integers and remove all the occurrences of these integers in the array.

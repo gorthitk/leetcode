@@ -1,4 +1,4 @@
-### 1451. Rearrange Words in a Sentence
+### Problem 1451. Rearrange Words in a Sentence
 
 ### Description
     Given a sentence text (A sentence is a string of space-separated words) in the following format:

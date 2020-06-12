@@ -1,4 +1,4 @@
-### 1020. Number of Enclaves
+### Problem 1020. Number of Enclaves
 
 ### Description
        Given a 2D array A, each cell is 0 (representing sea) or 1 (representing land)

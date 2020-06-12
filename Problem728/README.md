@@ -1,4 +1,4 @@
-### 728. Self Dividing Numbers
+### Problem 728. Self Dividing Numbers
  
 ### Description
     A self-dividing number is a number that is divisible by every digit it contains.

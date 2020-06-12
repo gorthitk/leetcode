@@ -25,7 +25,7 @@ class Solution
     {
         char ch = ss[index];
 
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' )
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
         {
             return 1;
         }

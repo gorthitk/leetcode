@@ -13,7 +13,6 @@ class Solution
         final int m = (n - 1) / 2;
         final int median = arr[m];
 
-
         List<Integer> nums = new ArrayList<>();
 
         for (int num : arr)
@@ -24,7 +23,7 @@ class Solution
         int[] result = new int[k];
 
         var numsAsList = nums.stream()
-                .sorted((a,b) -> {
+                .sorted((a, b) -> {
                     if (!a.equals(b))
                     {
                         int diffA = Math.abs(a - median);

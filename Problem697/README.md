@@ -1,4 +1,4 @@
-### 697. Degree of an Array
+### Problem 697. Degree of an Array
  
 ### Description
     Given a non-empty array of non-negative integers nums, the degree of this array is defined as the maximum frequency of any one of its elements.

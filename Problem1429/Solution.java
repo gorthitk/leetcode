@@ -9,6 +9,7 @@ class FirstUnique
     private final Set<Integer> duplicates = new HashSet<>();
     Node root;
     Node tail;
+
     public FirstUnique(int[] nums)
     {
         for (int num : nums)

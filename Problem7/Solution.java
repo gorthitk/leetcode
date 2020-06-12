@@ -1,10 +1,13 @@
-public class Solution {
-    public int reverse(int x) {
+public class Solution
+{
+    public int reverse(int x)
+    {
         long reverse = 0;
-        while (x != 0) {
-           reverse = reverse*10 + x%10;
-           x = x/10;
+        while (x != 0)
+        {
+            reverse = reverse * 10 + x % 10;
+            x = x / 10;
         }
-        return reverse > Integer.MAX_VALUE || reverse < Integer.MIN_VALUE? 0 : (int) reverse;  
+        return reverse > Integer.MAX_VALUE || reverse < Integer.MIN_VALUE ? 0 : (int) reverse;
     }
 }
