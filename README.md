@@ -1,5 +1,5 @@
 Solutions to leetcode problems
-Number of problems solved : <span color="green">      282 </span>
+<br />Number of problems solved :      282
 <table><thead><tr><th>Question</th> <th>Link to solution to</th></tr></thead><tbody>
 <tr>
 <td> 1. Two Sum </td>

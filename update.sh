@@ -4,7 +4,7 @@ rm -rf README.md
 echo "Solutions to leetcode problems" >> README.md
 
 DIRCOUNT="$(find . -maxdepth 1 -type d | wc -l)"
-echo "Number of problems solved : $DIRCOUNT" >> README.md
+echo "<br />Number of problems solved : $DIRCOUNT" >> README.md
 
 # Render the table
 
