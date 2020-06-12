@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public String longestCommonPrefix(String[] strs)
     {
         if (strs == null || strs.length == 0)
+        {
             return "";
+        }
         String first = strs[0];
         int len = first.length();
         int idx = first.length();

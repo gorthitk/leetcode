@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     private int count;
@@ -6,7 +10,6 @@ class Solution
     {
         count = 0;
         _getChildSum(root);
-
         return count;
     }
 
@@ -16,15 +19,12 @@ class Solution
         {
             return 0;
         }
-
         final int childSum = (root.left != null ? root.left.val : 0) + (root.right != null ? root.right.val : 0);
         final int grandChildSum = _getChildSum(root.left) + _getChildSum(root.right);
-
         if (root.val % 2 == 0)
         {
             count += grandChildSum;
         }
-
         return childSum;
     }
 }

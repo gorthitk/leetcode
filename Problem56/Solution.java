@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public List<Interval> merge(List<Interval> intervals)
     {
         if (intervals == null || intervals.size() == 0)
+        {
             return intervals;
+        }
         intervals.sort((a, b) -> a.start != b.start ? a.start - b.start : a.end - b.end);
         List<Interval> result = new ArrayList<>();
         Interval prev = intervals.get(0);

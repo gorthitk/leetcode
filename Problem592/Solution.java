@@ -1,13 +1,18 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
 {
-
     public String fractionAddition(String expression)
     {
         if (expression == null || expression.length() < 3)
+        {
             return "";
-
+        }
         List<Integer> numerators = new ArrayList<>();
         List<Integer> denominators = new ArrayList<>();
         for (int i = 0; i < expression.length(); i++)

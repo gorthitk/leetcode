@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Arrays;
 
 public class Solution
@@ -19,7 +24,6 @@ public class Solution
                 }
             }
         }
-
         return maxLen;
     }
 
@@ -34,7 +38,6 @@ public class Solution
             idx = nums[idx];
             count++;
         }
-
         boolean filled = true;
         for (int j = 0; j < nums.length; j++)
         {

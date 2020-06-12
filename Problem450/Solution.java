@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import Solution.TreeNode;
 
 public class Solution
@@ -5,7 +10,9 @@ public class Solution
     public TreeNode deleteNode(TreeNode root, int key)
     {
         if (root == null)
+        {
             return null;
+        }
         if (root.val > key)
         {
             root.left = deleteNode(root.left, key);
@@ -38,7 +45,6 @@ public class Solution
                 left.right = root.right;
                 return root.left;
             }
-
         }
         return root;
     }

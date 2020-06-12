@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,13 +12,11 @@ class Solution
     {
         final List<Integer> counts = new ArrayList<>();
         final long totalSum = _calculate(root, counts);
-
         long max = 0;
         for (long count : counts)
         {
             max = Math.max(max, count * (totalSum - count));
         }
-
         return (int) (max % 1000000007);
     }
 
@@ -23,10 +26,8 @@ class Solution
         {
             return 0;
         }
-
         int sum = root.val + _calculate(root.left, counts) + _calculate(root.right, counts);
         counts.add(sum);
-
         return sum;
     }
 }

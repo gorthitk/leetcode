@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public String reverseWords(String str)
@@ -9,14 +13,12 @@ public class Solution
         int n = str.length();
         StringBuilder reverse = new StringBuilder();
         StringBuilder reverseWord = new StringBuilder();
-
         for (int i = 0; i < n; i++)
         {
             if (str.charAt(i) != ' ')
             {
                 reverseWord.append(str.charAt(i));
             }
-
             if ((str.charAt(i) == ' ') || (i == n - 1))
             {
                 reverseWord = reverseWord.reverse();

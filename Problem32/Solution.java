@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Stack;
 
 public class Solution
@@ -11,13 +16,13 @@ public class Solution
             char current = s.charAt(i);
             if (current == '(')
             {
-                stack.push(new int[] { i, 0 });
+                stack.push(new int[]{i, 0});
             }
             else
             {
                 if (stack.isEmpty() || stack.peek()[1] == 1)
                 {
-                    stack.push(new int[] { i, 1 });
+                    stack.push(new int[]{i, 1});
                 }
                 else
                 {

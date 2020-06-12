@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class FileSystem
@@ -12,7 +17,6 @@ public class FileSystem
 
     public List<String> ls(String path)
     {
-
         String[] dirs = path.split("/");
         File current = dirs.length == 0 ? parent.directories.get("") : parent;
         for (String dir : dirs)

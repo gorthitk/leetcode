@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -7,7 +12,9 @@ public class Solution
         List<Integer> result = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         if (root != null)
+        {
             queue.add(root);
+        }
         while (!queue.isEmpty())
         {
             Queue<TreeNode> nxtQueue = new LinkedList<>();
@@ -17,9 +24,13 @@ public class Solution
                 TreeNode node = queue.poll();
                 maxVal = Math.max(maxVal, node.val);
                 if (node.left != null)
+                {
                     nxtQueue.add(node.left);
+                }
                 if (node.right != null)
+                {
                     nxtQueue.add(node.right);
+                }
             }
             result.add(maxVal);
             queue = nxtQueue;

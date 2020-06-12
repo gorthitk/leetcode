@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     private int leftMostLevel = 0;
@@ -12,7 +16,9 @@ public class Solution
     private void getLeftMostVal(TreeNode node, int currLvl)
     {
         if (node == null)
+        {
             return;
+        }
         if (leftMostLevel < currLvl && node.left == null && node.right == null)
         {
             leftMostLevel = currLvl;

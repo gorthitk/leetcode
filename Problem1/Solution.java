@@ -1,9 +1,13 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class Solution
 {
-
     public int[] twoSum(int[] nums, int target)
     {
         int[] result = new int[2];
@@ -20,8 +24,6 @@ public class Solution
             }
             map.put(num, i);
         }
-
         return result;
     }
-
 }

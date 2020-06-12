@@ -1,10 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
-
     public int numberOfArithmeticSlices(int[] A)
     {
         if (A == null || A.length < 3)
+        {
             return 0;
+        }
         int n = A.length;
         int[] dp = new int[n];
         dp[0] = 0;

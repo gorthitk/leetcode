@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,13 +10,11 @@ public class Solution
 {
     public List<Integer> diffWaysToCompute(String input)
     {
-
         return getWays(input, 0, input.length() - 1);
     }
 
     private List<Integer> getWays(String input, int start, int end)
     {
-
         List<Integer> result = new ArrayList<>();
         for (int i = start; i <= end; i++)
         {
@@ -39,9 +42,13 @@ public class Solution
     private Integer operationResult(Integer l, Integer r, char operator)
     {
         if (operator == '+')
+        {
             return l + r;
+        }
         else if (operator == '-')
+        {
             return l - r;
+        }
         return l * r;
     }
 }

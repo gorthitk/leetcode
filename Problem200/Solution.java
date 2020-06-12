@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int numIslands(char[][] grid)
     {
         if (grid == null || grid.length == 0 || grid[0].length == 0)
+        {
             return 0;
+        }
         int count = 0, m = grid.length, n = grid[0].length;
         for (int i = 0; i < m; i++)
         {
@@ -22,7 +28,9 @@ public class Solution
     private void dfs(int i, int j, char[][] grid, int m, int n)
     {
         if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == '0')
+        {
             return;
+        }
         grid[i][j] = '0';
         dfs(i + 1, j, grid, m, n);
         dfs(i - 1, j, grid, m, n);

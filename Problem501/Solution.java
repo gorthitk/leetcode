@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -12,9 +17,7 @@ public class Solution
         maxCount = 0;
         count = 0;
         curr = Integer.MAX_VALUE;
-
         inOrder(result, root);
-
         int n = result.size();
         int[] res = new int[n];
         for (int i = 0; i < n; i++)
@@ -27,7 +30,9 @@ public class Solution
     private void inOrder(List<Integer> result, TreeNode root)
     {
         if (root == null)
+        {
             return;
+        }
         inOrder(result, root.left);
         count = root.val == curr ? count + 1 : 1;
         curr = root.val;
@@ -40,7 +45,6 @@ public class Solution
         {
             result.add(curr);
         }
-
         inOrder(result, root.right);
     }
 }

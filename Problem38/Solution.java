@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public String countAndSay(int n)
     {
         if (n == 1)
+        {
             return "1";
+        }
         String prev = countAndSay(n - 1);
         StringBuilder sb = new StringBuilder();
         char c = prev.charAt(0);

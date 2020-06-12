@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +16,7 @@ public class Solution
     }
 
     private void getCombinations(int[] candidates, int target, int currSum, List<Integer> curr,
-            List<List<Integer>> result, int idx)
+                                 List<List<Integer>> result, int idx)
     {
         if (currSum == target)
         {

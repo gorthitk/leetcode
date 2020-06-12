@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     private int count = 0;
@@ -5,10 +9,8 @@ class Solution
     public int pseudoPalindromicPaths(TreeNode root)
     {
         count = 0;
-
         final int[] counter = new int[11];
         _find(root, counter);
-
         return count;
     }
 
@@ -18,9 +20,7 @@ class Solution
         {
             return;
         }
-
         counter[root.val]++;
-
         if (root.left == null && root.right == null)
         {
             if (_isPalindrome(counter))
@@ -33,7 +33,6 @@ class Solution
             _find(root.left, counter);
             _find(root.right, counter);
         }
-
         counter[root.val]--;
     }
 
@@ -48,7 +47,6 @@ class Solution
                 {
                     return false;
                 }
-
                 foundOdd = true;
             }
         }

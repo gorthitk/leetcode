@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Trie
 {
     Node root;
@@ -65,6 +69,5 @@ public class Trie
             super();
             children = new Node[26];
         }
-
     }
 }

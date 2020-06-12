@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     public int findSecondMinimumValue(TreeNode root)
@@ -19,7 +23,6 @@ class Solution
         {
             return Math.min(left, right);
         }
-
         return left == -1 ? right : left;
     }
 }

@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public boolean isPalindrome(ListNode head)
@@ -18,7 +22,9 @@ public class Solution
         while (slow != null)
         {
             if (slow.val != firstHalf.peek())
+            {
                 return false;
+            }
             firstHalf.pop();
             slow = slow.next;
         }

@@ -1,11 +1,11 @@
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode(int x) { val = x; }
- * }
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
+/**
+ * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; *
+ * TreeNode(int x) { val = x; } * }
  */
 public class Solution
 {
@@ -25,13 +25,19 @@ public class Solution
                 {
                     level.add(tmp.val);
                     if (tmp.left != null)
+                    {
                         queue.add(tmp.left);
+                    }
                     if (tmp.right != null)
+                    {
                         queue.add(tmp.right);
+                    }
                 }
             }
             if (!level.isEmpty())
+            {
                 levels.add(level);
+            }
         }
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         int numberOfLevels = levels.size();

@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -24,7 +29,6 @@ class FirstUnique
         {
             return -1;
         }
-
         return root.value;
     }
 
@@ -34,34 +38,28 @@ class FirstUnique
         {
             Node node = nodeMap.get(value);
             nodeMap.remove(value);
-
             if (node == root)
             {
                 root = node.next;
             }
-
             if (node == tail)
             {
                 tail = node.previous;
             }
-
             if (node.previous != null)
             {
                 node.previous.next = node.next;
             }
-
             if (node.next != null)
             {
                 node.next.previous = node.previous;
             }
-
             duplicates.add(value);
         }
         else if (!duplicates.contains(value))
         {
             Node node = new Node(value);
             nodeMap.put(value, node);
-
             if (root == null)
             {
                 root = node;

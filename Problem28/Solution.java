@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int strStr(String haystack, String needle)
     {
         if (haystack.equals(needle))
+        {
             return 0;
+        }
         for (int i = 0; i < haystack.length() - needle.length(); i++)
         {
             int k = i;
@@ -14,7 +20,9 @@ public class Solution
                 j++;
             }
             if (j == needle.length())
+            {
                 return i;
+            }
         }
         return -1;
     }

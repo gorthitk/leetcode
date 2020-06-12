@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int findTilt(TreeNode root)
@@ -13,12 +17,11 @@ public class Solution
     {
         if (root == null)
         {
-            return new int[] { 0, 0 };
+            return new int[]{0, 0};
         }
-
         int[] left = getTilt(root.left);
         int[] right = getTilt(root.right);
-        return new int[] { left[0] + right[0] + Math.abs(left[1] - right[1]), left[1] + right[1] + root.val };
+        return new int[]{left[0] + right[0] + Math.abs(left[1] - right[1]), left[1] + right[1] + root.val};
     }
 
     public class TreeNode

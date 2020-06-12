@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -36,7 +41,6 @@ class Solution
             digits.add(ROTATION_PAIRS.get(digit));
             num /= 10;
         }
-
         final int size = digits.size();
         int rotatedNumber = 0;
         for (int j = size - 1; j >= 0; j--)

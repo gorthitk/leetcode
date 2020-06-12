@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public boolean find132pattern(int[] nums)
@@ -7,11 +11,15 @@ public class Solution
         {
             min = Math.min(min, nums[i]);
             if (nums[i] == min)
+            {
                 continue;
+            }
             for (int j = i + 1; j < n; j++)
             {
                 if (min < nums[j] && nums[j] < nums[i])
+                {
                     return true;
+                }
             }
         }
         return false;

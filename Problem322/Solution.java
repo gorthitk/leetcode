@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int coinChange(int[] coins, int amount)
@@ -9,8 +13,8 @@ public class Solution
         {
             for (int coin : coins)
             {
-                dp[i] = Math.min(dp[i],
-                                 (i - coin >= 0 && dp[i - coin] != Integer.MAX_VALUE ? 1 + dp[i - coin] : dp[i]));
+                dp[i] = Math.min(dp[i], (i - coin >= 0 && dp[i - coin] != Integer.MAX_VALUE ? 1 + dp[i - coin] :
+                        dp[i]));
             }
         }
         return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];

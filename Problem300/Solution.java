@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Arrays;
 
 public class Solution
@@ -5,7 +10,9 @@ public class Solution
     public int lengthOfLIS(int[] nums)
     {
         if (nums == null || nums.length == 0)
+        {
             return 0;
+        }
         int maxLen = 1;
         int[] maxLens = new int[nums.length];
         Arrays.fill(maxLens, 1);
@@ -19,5 +26,4 @@ public class Solution
         }
         return maxLen;
     }
-
 }

@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -5,7 +10,6 @@ public class Solution
     public int evalRPN(String[] tokens)
     {
         List<String> operators = Arrays.asList("+", "-", "*", "/");
-
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < tokens.length; i++)
         {
@@ -19,14 +23,14 @@ public class Solution
         int y = stack.pop(), x = stack.pop();
         switch (operator)
         {
-        case "+":
-            return x + y;
-        case "-":
-            return x - y;
-        case "*":
-            return x * y;
-        default:
-            return x / y;
+            case "+":
+                return x + y;
+            case "-":
+                return x - y;
+            case "*":
+                return x * y;
+            default:
+                return x / y;
         }
     }
 }

@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Arrays;
 
 public class Solution
@@ -10,7 +15,9 @@ public class Solution
         for (int i = 0; i < n; i++)
         {
             if (i % 2 == 0)
+            {
                 sum += nums[i];
+            }
         }
         return sum;
     }

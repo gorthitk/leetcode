@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,10 +15,9 @@ class Solution
     {
         int[] result = new int[A.length];
         Map<Integer, List<Integer>> indicesByNumber = new HashMap<>();
-
-        IntStream.range(0, B.length).boxed().forEach(i -> indicesByNumber.computeIfAbsent(B[i], k -> new ArrayList<>()).add(i));
+        IntStream.range(0, B.length).boxed().forEach(i -> indicesByNumber.computeIfAbsent(B[i],
+                k -> new ArrayList<>()).add(i));
         IntStream.range(0, A.length).boxed().forEach(i -> result[i] = indicesByNumber.get(A[i]).remove(0));
-
         return result;
     }
 }

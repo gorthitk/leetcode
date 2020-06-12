@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     public int numberOfSubstrings(String s)
@@ -6,13 +10,10 @@ class Solution
         {
             return 0;
         }
-
         final char[] ss = s.toCharArray();
         final int n = ss.length;
-
         int result = 0;
         int i = 0, j = 0;
-
         final int[] counts = new int[3];
         while (i < n - 2)
         {
@@ -20,7 +21,6 @@ class Solution
             {
                 _updateCounts(counts, ss[j++], 1);
             }
-
             if (_containsAllCharacters(counts))
             {
                 result += (n - j + 1);
@@ -31,7 +31,6 @@ class Solution
             }
             _updateCounts(counts, ss[i++], -1);
         }
-
         return result;
     }
 

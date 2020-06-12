@@ -1,8 +1,12 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
 {
-
     public int distributeCandies(int[] candies)
     {
         int n = candies.length;
@@ -13,7 +17,6 @@ public class Solution
             map.put(kind, map.getOrDefault(kind, 0) + 1);
         }
         int each = n / 2;
-
         return each >= map.size() ? map.size() : each;
     }
 }

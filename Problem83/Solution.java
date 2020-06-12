@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public ListNode deleteDuplicates(ListNode head)
@@ -7,7 +11,9 @@ public class Solution
         {
             ListNode next = p.next;
             while (next != null && next.val == p.val)
+            {
                 next = next.next;
+            }
             p.next = next;
             p = p.next;
         }

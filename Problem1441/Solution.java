@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,18 +23,15 @@ class Solution
             {
                 j++;
             }
-
             if (j >= target.length)
             {
                 break;
             }
-
             if (i != n)
             {
                 result.add("Push");
             }
         }
-
         return result;
     }
 }

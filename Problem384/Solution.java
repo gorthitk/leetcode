@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Random;
 
 public class Solution
@@ -31,6 +36,5 @@ public class Solution
         int tmp = shuffle[i];
         shuffle[i] = shuffle[idx];
         shuffle[idx] = tmp;
-
     }
 }

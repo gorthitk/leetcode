@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -6,7 +11,6 @@ public class Solution
     {
         List<Integer> list = new ArrayList<Integer>();
         populateInOrder(root, list);
-
         return list;
     }
 

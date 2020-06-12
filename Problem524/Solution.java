@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Collections;
 import java.util.List;
 
@@ -9,7 +14,9 @@ public class Solution
         for (String wrd : d)
         {
             if (isSubstring(s, wrd))
+            {
                 return wrd;
+            }
         }
         return "";
     }
@@ -17,12 +24,16 @@ public class Solution
     private boolean isSubstring(String s, String d)
     {
         if (s.length() < d.length())
+        {
             return false;
+        }
         int i = 0, j = 0;
         while (i < s.length() && j < d.length())
         {
             if (s.charAt(i) == d.charAt(j))
+            {
                 j++;
+            }
             i++;
         }
         return j == d.length();

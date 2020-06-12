@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     private int sum = 0;
@@ -11,7 +15,9 @@ public class Solution
     private void getSum(TreeNode root, int prevSum)
     {
         if (root == null)
+        {
             return;
+        }
         int currentSum = prevSum * 10 + root.val;
         if (root.left == null && root.right == null)
         {

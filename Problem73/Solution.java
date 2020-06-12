@@ -1,10 +1,13 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public void setZeroes(int[][] matrix)
     {
         boolean[] flipRow = new boolean[matrix.length];
         boolean[] flipCol = new boolean[matrix[0].length];
-
         for (int i = 0; i < matrix.length; i++)
         {
             for (int j = 0; j < matrix[0].length; j++)
@@ -16,7 +19,6 @@ public class Solution
                 }
             }
         }
-
         for (int i = 0; i < matrix.length; i++)
         {
             for (int j = 0; j < matrix[0].length; j++)

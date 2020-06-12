@@ -1,9 +1,12 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public String[] findRestaurant(String[] list1, String[] list2)
     {
         Map<String, Integer> restaurants1 = new HashMap<>();
-
         List<String> favs = new ArrayList<>();
         for (int i = 0; i < list1.length; i++)
         {
@@ -28,7 +31,6 @@ public class Solution
                 }
             }
         }
-
         return favs.stream().toArray(String[]::new);
     }
 }

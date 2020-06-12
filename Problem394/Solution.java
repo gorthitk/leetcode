@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -37,7 +42,6 @@ public class Solution
                     count--;
                 }
                 words.push(words.pop() + sb.toString());
-
             }
             else
             {
@@ -45,7 +49,6 @@ public class Solution
             }
             i++;
         }
-
         return words.pop();
     }
 }

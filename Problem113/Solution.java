@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -12,7 +17,9 @@ public class Solution
     private void getPaths(TreeNode root, int sum, ArrayList<Integer> arrayList, List<List<Integer>> paths)
     {
         if (root == null)
+        {
             return;
+        }
         arrayList.add(root.val);
         if (sum == root.val && root.left == null && root.right == null)
         {

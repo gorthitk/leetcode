@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -11,7 +16,9 @@ public class Solution
     {
         Map<Character, Integer> map = new HashMap<>();
         for (char task : tasks)
+        {
             map.put(task, map.getOrDefault(task, 0) + 1);
+        }
         PriorityQueue<Character> queue = new PriorityQueue<>(new Comparator<Character>()
         {
             @Override
@@ -20,17 +27,18 @@ public class Solution
                 return map.get(o2) - map.get(o1);
             }
         });
-
         for (char task : map.keySet())
+        {
             queue.add(task);
-
+        }
         int count = 0;
         while (!queue.isEmpty())
         {
             List<Character> completedTask = new ArrayList<>();
             while (completedTask.size() < n + 1 && !queue.isEmpty())
+            {
                 completedTask.add(queue.poll());
-
+            }
             for (char chr : completedTask)
             {
                 if (map.get(chr) > 1)

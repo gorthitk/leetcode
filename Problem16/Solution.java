@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -14,7 +19,9 @@ public class Solution
             {
                 int sum = nums[i] + nums[j] + nums[k];
                 if (sum == target)
+                {
                     return target;
+                }
                 if (Math.abs(sum - target) < Math.abs(result - target))
                 {
                     result = sum;

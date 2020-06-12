@@ -1,10 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
-
     public int findPoisonedDuration(int[] timeSeries, int duration)
     {
         if (timeSeries == null || timeSeries.length == 0)
+        {
             return 0;
+        }
         int time = 0;
         int poisonedTimeStart = timeSeries[0];
         int poisonedTimeEnd = timeSeries[0] + duration;

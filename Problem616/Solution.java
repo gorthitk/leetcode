@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -10,13 +15,14 @@ public class Solution
         {
             int idx = s.indexOf(dic);
             if (idx == -1)
+            {
                 continue;
+            }
             while (idx != -1)
             {
-                intervals.add(new int[] { idx, idx + dic.length() });
+                intervals.add(new int[]{idx, idx + dic.length()});
                 idx = s.indexOf(dic, idx + 1);
             }
-
         }
         List<int[]> mergedIntervals = merge(intervals);
         int start = 0;
@@ -40,7 +46,6 @@ public class Solution
         }
         Collections.sort(intervals, new Comparator<int[]>()
         {
-
             @Override
             public int compare(int[] o1, int[] o2)
             {
@@ -65,5 +70,4 @@ public class Solution
         mergedIntervals.add(prev);
         return mergedIntervals;
     }
-
 }

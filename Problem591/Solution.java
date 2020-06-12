@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Stack;
 
 public class Solution
@@ -30,7 +35,9 @@ public class Solution
             {
                 int idx = code.indexOf(END_TAG, i + CLOSE_TAG.length() - 1);
                 if (idx == -1)
+                {
                     return false;
+                }
                 String s = code.substring(i + CLOSE_TAG.length(), idx);
                 if (stack.isEmpty() || !stack.pop().equals(s))
                 {
@@ -47,7 +54,9 @@ public class Solution
                 }
                 String s = code.substring(i + OPEN_TAG.length(), idx);
                 if (s.isEmpty() || s.length() < 1 || s.length() > 9)
+                {
                     return false;
+                }
                 for (char c : s.toCharArray())
                 {
                     if (!Character.isUpperCase(c))

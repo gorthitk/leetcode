@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +38,9 @@ public class Solution
         while (i < j)
         {
             if (s.charAt(i) != s.charAt(j))
+            {
                 return false;
+            }
             i++;
             j--;
         }

@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     private int kthSmallest;
@@ -11,7 +15,9 @@ public class Solution
     private int getKthElement(TreeNode root, int k, int curr)
     {
         if (root == null)
+        {
             return curr;
+        }
         curr = getKthElement(root.left, k, curr);
         curr++;
         if (curr == k)

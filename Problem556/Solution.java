@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     private int min;
@@ -17,7 +21,9 @@ public class Solution
         }
         findMin(counts, len, 0, trgt, 0);
         if (min == Integer.MAX_VALUE)
+        {
             return -1;
+        }
         return min;
     }
 

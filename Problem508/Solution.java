@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -9,7 +14,8 @@ public class Solution
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         getSums(root, map);
         List<Integer> list = new ArrayList<>();
-        map.forEach((k, v) -> {
+        map.forEach((k, v) ->
+        {
             if (v == maxCount)
             {
                 list.add(k);
@@ -17,7 +23,9 @@ public class Solution
         });
         int[] result = new int[list.size()];
         for (int i = 0; i < list.size(); i++)
+        {
             result[i] = list.get(i);
+        }
         return result;
     }
 

@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Stack;
 
 public class MinStack
@@ -39,7 +44,6 @@ public class MinStack
                 stack.add(local.pop());
             }
         }
-
     }
 
     public int top()

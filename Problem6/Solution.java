@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public String convert(String s, int numRows)
     {
         if (numRows <= 1)
+        {
             return s;
+        }
         StringBuilder[] sbArr = new StringBuilder[numRows];
         for (int i = 0; i < numRows; i++)
         {
@@ -16,9 +22,13 @@ public class Solution
         {
             sbArr[idx].append(s.charAt(i));
             if (idx == 0)
+            {
                 incr = 1;
+            }
             if (idx == numRows - 1)
+            {
                 incr = -1;
+            }
             idx += incr;
         }
         String result = "";

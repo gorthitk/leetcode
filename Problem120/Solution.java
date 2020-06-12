@@ -1,9 +1,13 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution
 {
-
     public int minimumTotal(List<List<Integer>> triangle)
     {
         int n = triangle.size();

@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public List<List<Integer>> fourSum(int[] nums, int target)
@@ -27,6 +31,5 @@ public class Solution
                 k = sum > 0 || sum == 0 ? k - 1 : k;
             }
         }
-
     }
 }

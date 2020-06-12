@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import Solution.TreeNode;
 
 public class Solution
@@ -19,7 +24,9 @@ public class Solution
         TreeNode root = new TreeNode(postorder[postOrderIdx--]);
         int rootIdx = 0;
         while (inorder[rootIdx] != root.val)
+        {
             rootIdx++;
+        }
         root.right = getRoot(inorder, postorder, rootIdx + 1, end);
         root.left = getRoot(inorder, postorder, start, rootIdx - 1);
         return root;

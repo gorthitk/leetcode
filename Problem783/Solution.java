@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     public int minDiffInBST(TreeNode root)
@@ -11,29 +15,23 @@ class Solution
         {
             return 0;
         }
-
         int minimumDifference = Integer.MAX_VALUE;
-
         if (lower != null)
         {
             minimumDifference = Math.min(root.val - lower, minimumDifference);
         }
-
         if (upper != null)
         {
             minimumDifference = Math.min(upper - root.val, minimumDifference);
         }
-
         if (root.left != null)
         {
             minimumDifference = Math.min(minimumDifference, _calculateMin(root.left, lower, root.val));
         }
-
         if (root.right != null)
         {
             minimumDifference = Math.min(minimumDifference, _calculateMin(root.right, root.val, upper));
         }
-
         return minimumDifference == Integer.MAX_VALUE ? 0 : minimumDifference;
     }
 }

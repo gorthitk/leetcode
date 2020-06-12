@@ -1,12 +1,14 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int[][] updateMatrix(int[][] matrix)
     {
-
         int row = matrix.length;
         int column = matrix[0].length;
         int max = row * column;
-
         for (int i = 0; i < row; i++)
         {
             for (int j = 0; j < column; j++)
@@ -19,7 +21,6 @@ public class Solution
                 }
             }
         }
-
         for (int i = row - 1; i >= 0; i--)
         {
             for (int j = column - 1; j >= 0; j--)
@@ -32,7 +33,6 @@ public class Solution
                 }
             }
         }
-
         return matrix;
     }
 }

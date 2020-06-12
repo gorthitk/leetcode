@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution1
 {
     public boolean checkRecord(String s)
     {
         if (s == null || s.length() == 0)
+        {
             return false;
+        }
         int absentCnt = 0;
         for (int i = 0; i < s.length(); i++)
         {
@@ -12,7 +18,9 @@ public class Solution1
             {
                 absentCnt++;
                 if (absentCnt > 1)
+                {
                     return false;
+                }
             }
             if (c == 'L' && i > 0 && i < s.length() - 1)
             {

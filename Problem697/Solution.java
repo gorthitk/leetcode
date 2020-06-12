@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +18,6 @@ class Solution
             endIdx.put(num, i);
             counts.put(num, counts.getOrDefault(num, 0) + 1);
         }
-
         int shortestLen = Integer.MAX_VALUE, max = 0;
         for (Map.Entry<Integer, Integer> entry : counts.entrySet())
         {
@@ -24,7 +28,6 @@ class Solution
                 max = entry.getValue();
             }
         }
-
         return shortestLen;
     }
 }

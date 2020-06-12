@@ -1,11 +1,13 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public String predictPartyVictory(String senate)
     {
         int radiant = (int) senate.chars().filter(c -> c == 'R').count(), dire = senate.length() - radiant;
-
         boolean[] banned = new boolean[senate.length()];
-
         while (radiant != 0 && dire != 0)
         {
             for (int i = 0; i < senate.length(); i++)
@@ -17,12 +19,15 @@ public class Solution
                 char current = senate.charAt(i);
                 banned[getNextIdx(senate, i, banned)] = false;
                 if (current == 'R')
+                {
                     dire--;
+                }
                 else
+                {
                     radiant--;
+                }
             }
         }
-
         return radiant == 0 ? "Dire" : "Radiant";
     }
 

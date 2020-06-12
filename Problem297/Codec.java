@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Codec
@@ -18,7 +23,6 @@ public class Codec
     {
         Queue<String> queue = new LinkedList<>();
         queue.addAll(Arrays.asList(data.split(DELIMITER)));
-
         return buildTree(queue);
     }
 
@@ -26,7 +30,9 @@ public class Codec
     {
         String node = queue.poll();
         if (node.equals(STUB))
+        {
             return null;
+        }
         TreeNode root = new TreeNode(Integer.parseInt(node));
         root.left = buildTree(queue);
         root.right = buildTree(queue);

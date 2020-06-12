@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     private int count;
@@ -19,8 +23,9 @@ public class Solution
             count++;
         }
         if (idx == nums.length)
+        {
             return;
+        }
         dfs(nums, idx + 1, sum + nums[idx], k);
-
     }
 }

@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Stack;
 
 public class Solution
@@ -5,7 +10,9 @@ public class Solution
     public TreeNode invertTree(TreeNode root)
     {
         if (root == null)
+        {
             return null;
+        }
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
         while (!stack.isEmpty())
@@ -15,9 +22,13 @@ public class Solution
             node.left = node.right;
             node.right = left;
             if (node.left != null)
+            {
                 stack.push(node.left);
+            }
             if (node.right != null)
+            {
                 stack.push(node.right);
+            }
         }
         return root;
     }

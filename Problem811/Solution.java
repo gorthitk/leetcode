@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,7 +25,6 @@ class Solution
                 counts.put(parentDomain, counts.getOrDefault(parentDomain, 0) + count);
             }
         }
-
         return counts.entrySet().stream().map(e -> e.getValue() + " " + e.getKey()).collect(Collectors.toList());
     }
 }

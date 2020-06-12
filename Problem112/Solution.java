@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import Solution.TreeNode;
 
 public class Solution
@@ -8,6 +13,7 @@ public class Solution
         {
             return false;
         }
-        return (root.left == null && root.right == null && sum - root.val == 0) || hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+        return (root.left == null && root.right == null && sum - root.val == 0) || hasPathSum(root.left,
+                sum - root.val) || hasPathSum(root.right, sum - root.val);
     }
 }

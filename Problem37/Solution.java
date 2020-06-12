@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public void solveSudoku(char[][] board)
     {
         if (board == null || board.length == 0)
+        {
             return;
+        }
         solve(board);
     }
 
@@ -20,14 +26,16 @@ public class Solution
                         if (isValid(board, i, j, k))
                         {
                             board[i][j] = k;
-
                             if (solve(board))
+                            {
                                 return true;
+                            }
                             else
+                            {
                                 board[i][j] = '.';
+                            }
                         }
                     }
-
                     return false;
                 }
             }
@@ -40,7 +48,9 @@ public class Solution
         for (int i = 0; i < 9; i++)
         {
             if (board[i][col] == c || board[row][i] == c || board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c)
+            {
                 return false;
+            }
         }
         return true;
     }

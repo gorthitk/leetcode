@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -16,7 +21,9 @@ public class Solution
     private void zigzagLevelOrder(List<List<Integer>> result, TreeNode root, int height)
     {
         if (root == null)
+        {
             return;
+        }
         if (height == result.size())
         {
             result.add(new LinkedList<Integer>());

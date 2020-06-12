@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Twitter
@@ -26,23 +31,22 @@ public class Twitter
     public List<Integer> getNewsFeed(int userId)
     {
         if (!users.containsKey(userId))
+        {
             return new ArrayList<>();
+        }
         PriorityQueue<Tweet> queue = new PriorityQueue<>(new Comparator<Tweet>()
         {
-
             @Override
             public int compare(Tweet o1, Tweet o2)
             {
                 return o2.time - o1.time;
             }
         });
-
         addToQueue(userId, queue);
         for (Integer followeeId : users.get(userId).follows)
         {
             addToQueue(followeeId, queue);
         }
-
         List<Integer> newsFeed = new ArrayList<>();
         while (!queue.isEmpty() && newsFeed.size() < 10)
         {
@@ -62,7 +66,9 @@ public class Twitter
     public void follow(int followerId, int followeeId)
     {
         if (followerId == followeeId)
+        {
             return;
+        }
         users.putIfAbsent(followerId, new User(followerId));
         users.putIfAbsent(followeeId, new User(followeeId));
         users.get(followerId).follows.add(followeeId);
@@ -85,7 +91,6 @@ public class Twitter
             super();
             this.userId = userId;
         }
-
     }
 
     class Tweet

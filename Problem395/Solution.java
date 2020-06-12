@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int longestSubstring(String s, int k)
@@ -9,7 +13,9 @@ public class Solution
     private int getSubstring(char[] s, int k, int start, int end)
     {
         if (end - start < k)
+        {
             return 0;
+        }
         int[] counts = new int[26];
         for (int i = start; i < end; i++)
         {
@@ -29,7 +35,6 @@ public class Solution
                         return Math.max(left, right);
                     }
                 }
-
             }
         }
         return end - start;

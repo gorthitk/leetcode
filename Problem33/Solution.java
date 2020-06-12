@@ -1,11 +1,16 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int search(int[] nums, int target)
     {
         if (nums == null || nums.length == 0)
+        {
             return -1;
+        }
         int n = nums.length;
-
         int low = 0;
         int hi = n - 1;
         while (low < hi)
@@ -26,9 +31,11 @@ public class Solution
     private int getTargetIdx(int[] nums, int start, int end, int target)
     {
         if (start > end)
+        {
             return -1;
+        }
         int mid = start + (end - start) / 2;
-        return nums[mid] == target ? mid : nums[mid] < target ? getTargetIdx(nums, mid + 1, end, target) : getTargetIdx(nums, start, mid - 1, target);
+        return nums[mid] == target ? mid : nums[mid] < target ? getTargetIdx(nums, mid + 1, end, target) :
+                getTargetIdx(nums, start, mid - 1, target);
     }
-
 }

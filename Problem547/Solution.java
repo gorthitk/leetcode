@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -32,7 +37,9 @@ public class Solution
                 for (int i = 0; i < n; i++)
                 {
                     if (m[p][i] == 1)
+                    {
                         queue.add(i);
+                    }
                 }
             }
         }

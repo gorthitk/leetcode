@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public boolean isBalanced(TreeNode root)
@@ -8,7 +12,9 @@ public class Solution
     private int getHeight(TreeNode root)
     {
         if (root == null)
+        {
             return 0;
+        }
         int left = getHeight(root.left);
         int right = getHeight(root.right);
         return left != -1 && right != -1 && Math.abs(left - right) < 2 ? 1 + Math.max(left, right) : -1;

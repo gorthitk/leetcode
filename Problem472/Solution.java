@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -33,7 +38,9 @@ public class Solution
     private boolean isConcatenatedWord(String word, Set<String> dictionary)
     {
         if (dictionary.isEmpty())
+        {
             return false;
+        }
         boolean[] dp = new boolean[word.length() + 1];
         dp[0] = true;
         for (int i = 1; i <= word.length(); i++)
@@ -41,7 +48,9 @@ public class Solution
             for (int j = 0; j < i; j++)
             {
                 if (!dp[j])
+                {
                     continue;
+                }
                 if (dictionary.contains(word.substring(j, i)))
                 {
                     dp[i] = true;

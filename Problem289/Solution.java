@@ -1,10 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
-
     public void gameOfLife(int[][] board)
     {
         if (board == null || board.length == 0 || board[0].length == 0)
+        {
             return;
+        }
         int m = board.length;
         int n = board[0].length;
         int[][] next = new int[m][n];
@@ -29,7 +34,6 @@ public class Solution
                 }
             }
         }
-
         for (int i = 0; i < m; i++)
         {
             for (int j = 0; j < n; j++)

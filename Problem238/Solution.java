@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int[] productExceptSelf(int[] nums)
@@ -8,7 +12,6 @@ public class Solution
         {
             product[i] = product[i + 1] * nums[i + 1];
         }
-
         int left = 1;
         for (int i = 0; i < nums.length; i++)
         {

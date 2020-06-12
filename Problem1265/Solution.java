@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     public void printLinkedListInReverse(ImmutableListNode head)
@@ -6,7 +10,6 @@ class Solution
         {
             return;
         }
-
         printLinkedListInReverse(head.getNext());
         head.printValue();
     }

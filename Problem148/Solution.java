@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public ListNode sortList(ListNode head)
     {
         if (head == null || head.next == null)
+        {
             return head;
+        }
         ListNode mid = head, fast = head, prev = null;
         while (fast != null && fast.next != null)
         {

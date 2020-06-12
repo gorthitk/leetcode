@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int removeDuplicates(int[] nums)
@@ -11,7 +15,6 @@ public class Solution
                 start = nums[j] != nums[i] ? j : start;
                 i++;
                 nums[i] = nums[j];
-
             }
         }
         return i + 1;

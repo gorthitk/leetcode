@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Stack;
 
 public class Solution
@@ -27,5 +32,4 @@ public class Solution
         }
         return simplifiedPath.isEmpty() ? "/" : simplifiedPath;
     }
-
 }

@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     public int rangeSumBST(TreeNode root, int L, int R)
@@ -6,17 +10,14 @@ class Solution
         {
             return 0;
         }
-
         if (root.val > R)
         {
             return rangeSumBST(root.left, L, R);
         }
-
         if (root.val < L)
         {
             return rangeSumBST(root.right, L, R);
         }
-
         return root.val + rangeSumBST(root.left, L, R) + rangeSumBST(root.right, L, R);
     }
 }

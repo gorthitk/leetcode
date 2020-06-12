@@ -1,6 +1,9 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
-
     public int subarraySum(int[] nums, int k)
     {
         int count = 0;
@@ -9,19 +12,21 @@ public class Solution
         {
             sum += nums[i];
             if (sum == k)
+            {
                 count++;
+            }
             int localSum = sum;
             int start = 0;
             while (start < i)
             {
                 localSum = localSum - nums[start];
                 if (localSum == k)
+                {
                     count++;
+                }
                 start++;
             }
-
         }
         return count;
     }
-
 }

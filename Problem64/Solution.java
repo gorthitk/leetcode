@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int minPathSum(int[][] grid)
     {
         if (grid == null || grid.length == 0 || grid[0].length == 0)
+        {
             return 0;
+        }
         int m = grid.length;
         int n = grid[0].length;
         int[][] dp = new int[m][n];

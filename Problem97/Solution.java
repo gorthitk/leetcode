@@ -1,10 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public boolean isInterleave(String s1, String s2, String s3)
     {
         if (s3.length() != s1.length() + s2.length())
+        {
             return false;
-
+        }
         boolean[][] dp = new boolean[s1.length() + 1][s2.length() + 1];
         for (int i = 0; i <= s1.length(); i++)
         {
@@ -24,8 +29,8 @@ public class Solution
                 }
                 else
                 {
-                    dp[i][j] = (dp[i - 1][j] && s1.charAt(i - 1) == s3.charAt(i + j - 1))
-                            || (dp[i][j - 1] && s2.charAt(j - 1) == s3.charAt(i + j - 1));
+                    dp[i][j] =
+                            (dp[i - 1][j] && s1.charAt(i - 1) == s3.charAt(i + j - 1)) || (dp[i][j - 1] && s2.charAt(j - 1) == s3.charAt(i + j - 1));
                 }
             }
         }

@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class LogSystem
@@ -32,8 +37,7 @@ public class LogSystem
         List<Integer> result = new ArrayList<Integer>();
         for (String time : logs.keySet())
         {
-            if (time.substring(0, idx).compareTo(s.substring(0, idx)) >= 0
-                    && time.substring(0, idx).compareTo(e.substring(0, idx)) <= 0)
+            if (time.substring(0, idx).compareTo(s.substring(0, idx)) >= 0 && time.substring(0, idx).compareTo(e.substring(0, idx)) <= 0)
             {
                 result.addAll(logs.get(time));
             }

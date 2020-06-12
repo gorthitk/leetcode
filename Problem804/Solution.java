@@ -1,14 +1,16 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.HashSet;
 import java.util.Set;
 
 class Solution
 {
-    private static final String[] MORSE_CODE =
-            {
-                    ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..",
-                    ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.",
-                    "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."
-            };
+    private static final String[] MORSE_CODE = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---"
+            , "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-" +
+            ".--", "--.."};
 
     public int uniqueMorseRepresentations(String[] words)
     {

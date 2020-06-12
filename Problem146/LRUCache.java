@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class LRUCache
@@ -13,7 +18,6 @@ public class LRUCache
         this.capacity = capacity;
         lookUp = new HashMap<>();
         used = new HashMap<>();
-
         queue = new PriorityQueue<>(new Comparator<Integer>()
         {
             @Override

@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -20,9 +25,13 @@ public class Solution
                     count++;
                     sum += node.val;
                     if (node.left != null)
+                    {
                         nextLevel.add(node.left);
+                    }
                     if (node.right != null)
+                    {
                         nextLevel.add(node.right);
+                    }
                 }
                 avergaes.add(sum / count);
                 queue = nextLevel;

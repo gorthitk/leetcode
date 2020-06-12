@@ -1,8 +1,12 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class RandomizedCollection
 {
-
     List<Integer> list;
     Map<Integer, HashSet<Integer>> indices;
     Random rand = new Random();
@@ -28,10 +32,8 @@ public class RandomizedCollection
         {
             return false;
         }
-
         int idx = indices.get(val).iterator().next();
         indices.get(val).remove(idx);
-
         if (idx < list.size() - 1)
         {
             int replaceVal = list.get(list.size() - 1);
@@ -39,11 +41,11 @@ public class RandomizedCollection
             indices.get(replaceVal).remove(list.size() - 1);
             indices.get(replaceVal).add(idx);
         }
-
         list.remove(list.size() - 1);
         if (indices.get(val).isEmpty())
+        {
             indices.remove(val);
-
+        }
         return true;
     }
 

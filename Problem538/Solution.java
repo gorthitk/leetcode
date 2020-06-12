@@ -1,11 +1,11 @@
 /**
- * Definition for a binary tree node.
- * public class TreeNode {
- * int val;
- * TreeNode left;
- * TreeNode right;
- * TreeNode(int x) { val = x; }
- * }
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
+/**
+ * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; *
+ * TreeNode(int x) { val = x; } * }
  */
 public class Solution
 {
@@ -23,7 +23,6 @@ public class Solution
         }
         int left = 0;
         int right = 0;
-
         if (root.right != null)
         {
             right = getAddVal(root.right);
@@ -48,5 +47,4 @@ public class Solution
         addtoNodes(node.left, right);
         addtoNodes(node.right, right);
     }
-
 }

@@ -1,11 +1,14 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
-
     public int[][] generateMatrix(int n)
     {
         if (n <= 0)
         {
-            return new int[][] { {} };
+            return new int[][]{{}};
         }
         int[][] matrix = new int[n][n];
         generateSpiralMatrix(0, 0, matrix.length - 1, matrix[0].length - 1, matrix, 1);
@@ -37,7 +40,6 @@ public class Solution
                     matrix[maxRow][i] = next++;
                 }
             }
-
             maxRow--;
             if (minCol <= maxCol)
             {
@@ -46,7 +48,6 @@ public class Solution
                     matrix[i][minCol] = next++;
                 }
             }
-
             minCol++;
             generateSpiralMatrix(minRow, minCol, maxRow, maxCol, matrix, next);
         }

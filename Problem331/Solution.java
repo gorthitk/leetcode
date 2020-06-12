@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public boolean isValidSerialization(String preorder)
@@ -7,7 +11,9 @@ public class Solution
         for (String node : nodes)
         {
             if (--expectedNodes < 0)
+            {
                 return false;
+            }
             expectedNodes += node.equals("#") ? 0 : 2;
         }
         return expectedNodes == 0;

@@ -1,9 +1,13 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution
 {
-
     public List<String> binaryTreePaths(TreeNode root)
     {
         List<String> list = new ArrayList<String>();
@@ -14,7 +18,9 @@ public class Solution
     private void getPaths(TreeNode root, List<String> list)
     {
         if (root == null)
+        {
             return;
+        }
         if (root.left == null && root.right == null)
         {
             list.add("" + root.val);
@@ -28,7 +34,6 @@ public class Solution
         {
             list.add(root.val + "->" + path);
         }
-
         for (String path : right)
         {
             list.add(root.val + "->" + path);

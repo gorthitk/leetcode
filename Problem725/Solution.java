@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     public ListNode[] splitListToParts(ListNode root, int k)
@@ -8,9 +12,7 @@ class Solution
         {
             len++;
         }
-
         int eachListContains = len / k, extra = len % k;
-
         ListNode node = root, prev = null;
         for (int i = 0; i < k && node != null; i++, extra--)
         {

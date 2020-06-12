@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -21,7 +26,9 @@ public class Solution
             {
                 isCommonSuqsequence = i == j ? isCommonSuqsequence : isSubSequence(strs[i], strs[j]);
                 if (isCommonSuqsequence)
+                {
                     break;
+                }
             }
             if (!isCommonSuqsequence)
             {
@@ -34,16 +41,22 @@ public class Solution
     private boolean isSubSequence(String subSequence, String b)
     {
         if (subSequence.length() > b.length())
+        {
             return false;
+        }
         if (subSequence.equals(b))
+        {
             return true;
+        }
         int prevIdx = -1;
         for (int i = 0; i < subSequence.length(); i++)
         {
             char c = subSequence.charAt(i);
             int idx = b.indexOf(c, prevIdx + 1);
             if (idx == -1)
+            {
                 return false;
+            }
             prevIdx = idx;
         }
         return true;

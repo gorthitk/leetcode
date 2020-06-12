@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class BrowserHistory
 {
     Node root;
@@ -12,10 +16,8 @@ class BrowserHistory
     public void visit(String url)
     {
         final Node node = new Node(url);
-
         current.next = node;
         node.prev = current;
-
         current = node;
     }
 
@@ -25,7 +27,6 @@ class BrowserHistory
         {
             current = current.prev;
         }
-
         return current.url;
     }
 
@@ -35,14 +36,12 @@ class BrowserHistory
         {
             current = current.next;
         }
-
         return current.url;
     }
 
     class Node
     {
         private final String url;
-
         Node prev;
         Node next;
 

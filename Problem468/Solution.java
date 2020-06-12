@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     private static final String IPV4 = "IPv4";
@@ -12,7 +16,9 @@ public class Solution
         {
             String[] ipAddress = IP.split(IPV4_DELIMITER);
             if (ipAddress.length != 4 || IP.charAt(IP.length() - 1) == '.' || IP.charAt(0) == '.')
+            {
                 return NEITHER;
+            }
             for (String add : ipAddress)
             {
                 int num = getNumber(add);
@@ -34,7 +40,9 @@ public class Solution
         {
             String[] ipAddress = IP.split(IPV6_DELIMITER);
             if (ipAddress.length != 8 || IP.charAt(IP.length() - 1) == ':' || IP.charAt(0) == ':')
+            {
                 return NEITHER;
+            }
             for (String add : ipAddress)
             {
                 if (add.isEmpty() || add.length() > 4)

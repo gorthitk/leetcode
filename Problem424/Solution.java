@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int characterReplacement(String s, int k)
@@ -8,7 +12,9 @@ public class Solution
         {
             maxCount = Math.max(maxCount, ++count[s.charAt(end) - 'A']);
             while (end - start - maxCount + 1 > k)
+            {
                 count[s.charAt(start++) - 'A']--;
+            }
             maxLen = Math.max(maxLen, end - start + 1);
         }
         return maxLen;

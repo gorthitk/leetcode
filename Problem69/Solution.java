@@ -1,9 +1,15 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public int mySqrt(int x)
     {
         if (x == 0)
+        {
             return 0;
+        }
         int start = 1, end = x;
         while (true)
         {
@@ -15,7 +21,9 @@ public class Solution
             else
             {
                 if (mid + 1 > x / (mid + 1))
+                {
                     return mid;
+                }
                 start = mid + 1;
             }
         }

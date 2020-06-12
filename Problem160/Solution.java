@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB)
@@ -40,7 +44,9 @@ public class Solution
         while (a != null)
         {
             if (a == b)
+            {
                 return a;
+            }
             a = a.next;
             b = b.next;
         }

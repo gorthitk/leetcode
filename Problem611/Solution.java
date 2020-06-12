@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Arrays;
 
 public class Solution
@@ -5,7 +10,9 @@ public class Solution
     public int triangleNumber(int[] nums)
     {
         if (nums == null || nums.length < 3)
+        {
             return 0;
+        }
         int count = 0;
         int n = nums.length;
         Arrays.sort(nums);

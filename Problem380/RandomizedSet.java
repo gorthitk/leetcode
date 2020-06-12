@@ -1,8 +1,12 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class RandomizedSet
 {
-
     List<Integer> list;
     Map<Integer, Integer> indices;
 

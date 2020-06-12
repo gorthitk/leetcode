@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 class Solution
 {
     public int goodNodes(TreeNode root)
@@ -11,7 +15,6 @@ class Solution
         {
             return 0;
         }
-
         final int max = Math.max(root.val, maxSoFar);
         return (root.val >= maxSoFar ? 1 : 0) + _count(root.left, max) + _count(root.right, max);
     }

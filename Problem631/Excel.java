@@ -1,10 +1,14 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class Excel
 {
     int[][] sheet;
-
     Map<String, String[]> Sumfunctions;
 
     public Excel(int H, char W)

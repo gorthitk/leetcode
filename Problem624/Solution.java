@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.List;
 
 public class Solution
@@ -13,7 +18,6 @@ public class Solution
             int max = arrays.get(i).get(arrays.get(i).size() - 1);
             result = Math.max(result, Math.abs(currMin - max));
             result = Math.max(result, Math.abs(currMax - min));
-
             currMax = Math.max(currMax, max);
             currMin = Math.min(currMin, min);
         }

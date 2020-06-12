@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public void nextPermutation(int[] nums)
@@ -7,7 +11,9 @@ public class Solution
         for (; j >= 1; j--)
         {
             if (nums[j] > nums[j - 1])
+            {
                 break;
+            }
         }
         if (j != 0)
         {
@@ -28,7 +34,6 @@ public class Solution
             start++;
             end--;
         }
-
     }
 
     private void swap(int[] nums, int j)

@@ -1,9 +1,13 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution
 {
-
     public List<String> restoreIpAddresses(String s)
     {
         List<String> result = new ArrayList<String>();
@@ -32,8 +36,7 @@ public class Solution
             }
             return;
         }
-
-        for (Integer len : new int[] { 0, 1, 2 })
+        for (Integer len : new int[]{0, 1, 2})
         {
             List<String> newCurrent = new ArrayList<>();
             if (start - len <= start + 1 && start - len > 0)
@@ -42,9 +45,7 @@ public class Solution
                 for (String curr : current)
                 {
                     String add = currByte;
-
-                    if ((add.length() != 1 && add.charAt(0) == '0')
-                            || (add.length() == 3 && Integer.parseInt(add) > 255))
+                    if ((add.length() != 1 && add.charAt(0) == '0') || (add.length() == 3 && Integer.parseInt(add) > 255))
                     {
                         continue;
                     }

@@ -1,8 +1,12 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
 {
-
     public List<Integer> killProcess(List<Integer> pid, List<Integer> ppid, int kill)
     {
         Map<Integer, List<Integer>> mapping = new HashMap<>();
@@ -12,11 +16,9 @@ public class Solution
             mapping.putIfAbsent(parentProcessId, new ArrayList<>());
             mapping.get(parentProcessId).add(pid.get(i));
         }
-
         List<Integer> killed = new ArrayList<>();
         Queue<Integer> queue = new LinkedList<>();
         queue.add(kill);
-
         while (!queue.isEmpty())
         {
             int processId = queue.poll();
@@ -26,7 +28,6 @@ public class Solution
                 queue.addAll(mapping.get(processId));
             }
         }
-
         return killed;
     }
 }

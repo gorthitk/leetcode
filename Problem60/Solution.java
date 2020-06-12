@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 public class Solution
@@ -24,8 +29,6 @@ public class Solution
             numbers.remove(index);
             k -= index * fact[n - i];
         }
-
         return String.valueOf(sb);
     }
-
 }

@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.*;
 
 class Solution
@@ -16,10 +21,8 @@ class Solution
             result.addAll(partialResult);
             return;
         }
-
         final char chr = chars[i];
         final Set<Character> permutations = new HashSet<>();
-
         if (Character.isAlphabetic(chr))
         {
             permutations.add(Character.toUpperCase(chr));
@@ -29,10 +32,8 @@ class Solution
         {
             permutations.add(chr);
         }
-
         final ArrayList<String> newPartialResult = new ArrayList<>();
         permutations.forEach(c -> partialResult.forEach(s -> newPartialResult.add(s + c)));
-
         _findPermutations(chars, i + 1, result, newPartialResult);
     }
 }

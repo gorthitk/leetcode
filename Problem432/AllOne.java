@@ -1,3 +1,8 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
+
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,17 +19,14 @@ public class AllOne
         map = new HashMap<String, Integer>();
         maxQueue = new PriorityQueue<>(new Comparator<String>()
         {
-
             @Override
             public int compare(String o1, String o2)
             {
                 return map.get(o1) - map.get(o2);
             }
         });
-
         minQueue = new PriorityQueue<>(new Comparator<String>()
         {
-
             @Override
             public int compare(String o1, String o2)
             {
@@ -38,7 +40,6 @@ public class AllOne
         map.put(key, map.getOrDefault(key, 0) + 1);
         maxQueue.remove(key);
         minQueue.remove(key);
-
         maxQueue.add(key);
         minQueue.add(key);
     }

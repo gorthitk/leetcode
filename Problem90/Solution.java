@@ -1,3 +1,7 @@
+/**
+ * @author tgorthi
+ * @since Jun 2020
+ */
 public class Solution
 {
     public List<List<Integer>> subsetsWithDup(int[] nums)
@@ -14,7 +18,9 @@ public class Solution
         for (int i = idx; i < nums.length; i++)
         {
             if (i > idx && nums[i] == nums[i - 1])
+            {
                 continue;
+            }
             current.add(nums[i]);
             getSubsets(nums, i + 1, result, current);
             current.remove(current.size() - 1);
