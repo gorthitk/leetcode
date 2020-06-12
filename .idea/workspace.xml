@@ -2,294 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d60d0ab3-65ad-49f4-b594-c1e1299227e2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem100/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem101/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem102/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1020/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem103/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem104/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem105/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem106/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem107/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem108/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem11/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem110/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem111/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem112/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem113/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem114/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem116/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem117/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem118/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem12/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem120/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem121/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem122/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1231/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem124/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1265/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1269/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1272/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1273/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem129/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem130/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1302/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1306/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem131/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1315/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1324/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1325/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1338/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1339/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1357/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1358/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem136/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1371/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1385/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem139/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1394/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1395/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem14/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem141/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1413/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1423/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1429/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem144/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1441/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1443/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1448/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1451/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1456/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1457/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem146/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1471/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1472/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem148/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem15/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem150/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem155/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem16/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem160/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem162/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem165/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem166/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem168/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem169/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem172/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem18/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem192/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem193/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem195/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem198/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem199/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem200/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem201/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem202/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem203/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem206/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem208/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem21/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem212/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem216/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem226/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem230/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem234/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem235/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem236/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem237/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem238/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem240/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem241/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem25/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem257/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem26/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem279/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem28/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem281/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem289/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem297/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem299/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem300/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem31/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem32/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem322/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem326/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem33/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem331/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem334/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem34/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem341/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem343/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem35/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem355/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem357/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem365/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem367/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem37/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem376/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem377/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem38/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem380/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem381/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem383/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem384/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem388/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem39/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem392/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem394/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem395/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem396/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem4/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem40/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem404/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem413/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem416/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem424/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem432/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem437/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem449/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem45/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem450/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem451/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem454/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem456/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem460/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem468/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem472/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem48/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem486/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem495/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem5/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem501/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem504/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem507/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem508/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem513/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem515/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem516/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem520/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem521/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem522/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem524/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem526/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem53/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem538/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem54/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem540/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem541/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem542/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem543/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem547/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem55/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem551/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem552/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem554/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem556/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem557/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem56/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem560/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem561/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem562/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem563/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem565/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem566/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem567/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem572/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem575/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem58/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem581/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem582/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem583/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem588/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem59/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem591/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem592/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem593/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem594/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem598/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem599/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem6/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem60/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem605/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem606/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem609/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem611/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem616/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem617/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem621/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem623/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem624/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem625/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem628/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem630/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem631/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem633/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem635/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem637/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem64/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem649/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem65/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem650/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem651/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem653/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem657/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem669/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem671/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem69/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem690/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem692/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem695/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem697/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem7/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem70/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem71/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem717/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem72/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem720/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem724/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem725/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem728/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem73/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem733/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem739/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem740/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem744/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem746/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem747/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem749/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem75/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem760/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem766/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem783/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem784/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem788/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem79/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem796/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem8/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem80/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem804/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem811/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem83/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem87/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem875/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem9/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem90/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem91/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem92/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem93/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem938/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem94/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem97/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem98/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem997/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem999/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update.sh" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -315,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addProblem.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -324,12 +37,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <first_editor relative-caret-position="645">
+                <caret line="296" selection-start-line="296" selection-end-line="296" />
               </first_editor>
               <second_editor />
             </state>
@@ -428,8 +141,8 @@
         <option value="$PROJECT_DIR$/Problem938/README.md" />
         <option value="$PROJECT_DIR$/Problem1269/README.md" />
         <option value="$PROJECT_DIR$/Problem1269/Solution.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/addProblem.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -569,12 +282,12 @@
       <workItem from="1591954300618" duration="337000" />
       <workItem from="1591956180441" duration="2885000" />
       <workItem from="1591998246586" duration="1853000" />
-      <workItem from="1592001542627" duration="2645000" />
+      <workItem from="1592001542627" duration="2727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42936000" />
+    <option name="totallyTimeSpent" value="43018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,7 +302,7 @@
     <frame x="0" y="0" width="2048" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2547358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2547358" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -604,7 +317,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32994455" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32994455" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -1098,20 +811,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addProblem.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="645">
+            <caret line="296" selection-start-line="296" selection-end-line="296" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

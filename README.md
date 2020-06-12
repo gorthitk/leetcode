@@ -4,9 +4,9 @@ The code in this repository is my attempts at solving several algo-datastructure
 Number of Problems solved : 284
 ```
 
-
 Solutions in the following languages : 
 ![Language](https://img.shields.io/badge/language-Java-brightgreen.svg)&nbsp;![Language](https://img.shields.io/badge/language-Go-orange.svg)&nbsp;![Language](https://img.shields.io/badge/language-Javascript-blue.svg)&nbsp;
+
 
 |  #  | Title           |  Solution     | 
 |-----|---------------- | --------------- | 
