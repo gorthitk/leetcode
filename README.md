@@ -294,3 +294,6 @@ Solutions in the following languages :
 1457 | [Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/) | [Java](./Problem1457/Solution.java) |
 1471 | [The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | [Java](./Problem1471/Solution.java) |
 1472 | [Design Browser History](https://leetcode.com/problems/design-browser-history/) | [Java](./Problem1472/Solution.java) |
+5453 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [Java](./Problem5453/Solution.java) |
+5454 | [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/) | [Java](./Problem5454/Solution.java) |
+5455 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [Java](./Problem5455/Solution.java) |
