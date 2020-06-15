@@ -108,7 +108,7 @@ Solutions in the following languages :
 192 | [Word Frequency](https://leetcode.com/problems/word-frequency/#/description) | [Bash](./Problem192/Solution.sh) |
 193 | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/#/description) | [Bash](./Problem193/Solution.sh) |
 195 | [Tenth Line](https://leetcode.com/problems/tenth-line/#/description) | [Bash](./Problem195/Solution.sh) |
-198 | [198. House Robber](https://leetcode.com/problems/house-robber/#/description) | [Golang](./Problem198/Solution.go),[Java](./Problem198/Solution.java) |
+198 | [House Robber](https://leetcode.com/problems/house-robber/#/description) | [Golang](./Problem198/Solution.go),[Java](./Problem198/Solution.java) |
 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/#/description) | [Golang](./Problem199/Solution.go),[Java](./Problem199/Solution.java) |
 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/#/description) | [Java](./Problem200/Solution.java) |
 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/#/description) | [Java](./Problem201/Solution.java) |
@@ -133,7 +133,7 @@ Solutions in the following languages :
 289 | [Game of Life](https://leetcode.com/problems/game-of-life/#/description) | [Java](./Problem289/Solution.java) |
 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description) | [Java](./Problem297/Codec.java) |
 299 | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/#/description) | [Java](./Problem299/Solution.java) |
-300 | [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/#/description) | [Java](./Problem300/Solution.java) |
+300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/#/description) | [Java](./Problem300/Solution.java) |
 322 | [Coin Change](https://leetcode.com/problems/coin-change/#/description) | [Java](./Problem322/Solution.java) |
 326 | [Power of Three](https://leetcode.com/problems/power-of-three/#/description) | [Java](./Problem326/Solution.java) |
 331 | [Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/#/description) | [Java](./Problem331/Solution.java) |
@@ -160,12 +160,12 @@ Solutions in the following languages :
 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/#/description) | [Java](./Problem416/Solution.java) |
 424 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/#/description) | [Java](./Problem424/Solution.java) |
 432 | [All O`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/#/description) | [Java](./Problem432/AllOne.java) |
-437 | [437. Path Sum III](https://leetcode.com/problems/path-sum-iii/#/description) | [Golang](./Problem437/Solution.go),[Java](./Problem437/Solution.java) |
+437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/#/description) | [Golang](./Problem437/Solution.go),[Java](./Problem437/Solution.java) |
 449 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/#/description) | [Java](./Problem449/Codec.java) |
 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/#/description) | [Golang](./Problem450/Solution.go),[Java](./Problem450/Solution.java) |
 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/#/description) | [Java](./Problem451/Solution.java) |
 454 | [4Sum II](https://leetcode.com/problems/4sum-ii/#/description) | [Java](./Problem454/Solution.java) |
-456 | [132 Pattern](https://leetcode.com/problems/132-pattern/#/description) | [Java](./Problem456/Solution.java) |
+456 | [Pattern](https://leetcode.com/problems/132-pattern/#/description) | [Java](./Problem456/Solution.java) |
 460 | [LFU Cache](https://leetcode.com/problems/lfu-cache/#/description) | [Java](./Problem460/LFUCache.java) |
 468 | [Validate IP Address](https://leetcode.com/problems/validate-ip-address/#/description) | [Java](./Problem468/RegexSolution.java) |
 472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words/#/description) | [Java](./Problem472/Solution.java) |
@@ -204,7 +204,7 @@ Solutions in the following languages :
 572 | [Subtree of Another Tree](https://leetcode.com/contest/leetcode-weekly-contest-31/problems/subtree-of-another-tree/) | [Golang](./Problem572/Solution.go),[Java](./Problem572/Solution.java) |
 575 | [Distribute Candies](https://leetcode.com/contest/leetcode-weekly-contest-31/problems/distribute-candies/) | [Java](./Problem575/Solution.java) |
 581 | [Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/#/description) | [Golang](./Problem581/Solution.go),[Java](./Problem581/Solution.java) |
-582 | [6. ZigZag Conversion](https://leetcode.com/contest/leetcode-weekly-contest-32/problems/kill-process/) | [Golang](./Problem582/Solution.go),[Java](./Problem582/Solution.java) |
+582 | [ZigZag Conversion](https://leetcode.com/contest/leetcode-weekly-contest-32/problems/kill-process/) | [Golang](./Problem582/Solution.go),[Java](./Problem582/Solution.java) |
 583 | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/#/description) | [Java](./Problem583/Solution.java) |
 588 | [Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system/#/description) | [Java](./Problem588/FileSystem.java) |
 591 | [Tag Validator](https://leetcode.com/problems/tag-validator/#/description) | [Java](./Problem591/Solution.java) |
@@ -271,7 +271,7 @@ Solutions in the following languages :
 1272 | [Remove Interval](https://leetcode.com/problems/remove-interval/) | [Java](./Problem1272/Solution.java) |
 1273 | [Delete Tree Nodes](https://leetcode.com/problems/delete-tree-nodes/) | [Java](./Problem1273/Solution.java) |
 1302 | [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | [Java](./Problem1302/Solution.java) |
-1306 | [1315. Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/jump-game-iii/) | [Java](./Problem1306/Solution.java) |
+1306 | [Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/jump-game-iii/) | [Java](./Problem1306/Solution.java) |
 1315 | [Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/) | [Java](./Problem1315/Solution.java) |
 1324 | [Print Words Vertically](https://leetcode.com/problems/print-words-vertically/) | [Java](./Problem1324/Solution.java) |
 1325 | [Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/) | [Java](./Problem1325/Solution.java) |

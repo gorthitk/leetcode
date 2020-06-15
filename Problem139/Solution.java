@@ -3,21 +3,34 @@
  * @since Jun 2020
  */
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
-public class Solution
+class Solution
 {
     public boolean wordBreak(String s, List<String> wordDict)
     {
-        return dynamicSolution(s, wordDict);        //return breakWords(s, wordDict, new ArrayList<>(), 0);    }
-        // Dynamic    private boolean dynamicSolution(String s, List<String> wordDict)    {        int n = s.length()
-        // ;        boolean dp[] = new boolean[n + 1];        dp[0] = true;        for (int i = 1; i <= n; i++)
-        // {            for (int j = 0; j < i; j++)            {                String word = s.substring(j, i);
-        // if (dp[j] && wordDict.contains(word))                {                    dp[i] = true;
-        // break;                }            }        }        return dp[n];    }    // Recursive    private boolean
-        // breakWords(String s, List<String> wordDict, List<String> current, int startIdx)    {        if (startIdx
-        // == s.length())            return true;        for (int i = startIdx + 1; i <= s.length(); i++)        {
-        // String word = s.substring(startIdx, i);            if (wordDict.contains(word))            {
-        // current.add(word);                boolean otherWordsLegal = breakWords(s, wordDict, current, i);
-        // if (otherWordsLegal)                    return true;                current.remove(word);            }
-        // }        return false;    }}
+        final Set<String> words = new HashSet<>(wordDict);
+        final int n = s.length();
+
+        final boolean[] dp = new boolean[n];
+
+        // dp[i] -> can be broken down if S[i..j] is in the dictionary and dp[j] = true;
+
+        for (int i = n - 1; i >= 0; i--)
+        {
+            for (int j = i; j < n && !dp[i]; j++)
+            {
+                if (j == n - 1 || dp[j + 1])
+                {
+                    String subStr = s.substring(i, j + 1);
+                    dp[i] = words.contains(subStr);
+                }
+            }
+        }
+
+
+        return dp[0];
+    }
+}
