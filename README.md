@@ -1,7 +1,7 @@
 The code in this repository is my attempts at solving several algo-datastructure problems as found on  [Leetcode](https://leetcode.com/). The solutions here are not always the best or optimal. That being said, feel free to fork the repo and use them for any purposes. Good luck ! 
 
 ```
-Number of Problems solved : 288
+Number of Problems solved : 291
 ```
 
 Solutions in the following languages : 
@@ -294,7 +294,10 @@ Solutions in the following languages :
 1457 | [Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/) | [Java](./Problem1457/Solution.java) |
 1471 | [The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | [Java](./Problem1471/Solution.java) |
 1472 | [Design Browser History](https://leetcode.com/problems/design-browser-history/) | [Java](./Problem1472/Solution.java) |
-5453 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [Java](./Problem5453/Solution.java) |
-5454 | [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/) | [Java](./Problem5454/Solution.java) |
-5455 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [Java](./Problem5455/Solution.java) |
-5456 | [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [Java](./Problem5456/Solution.java) |
+1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | [Java](./Problem5453/Solution.java) |
+1481 | [Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/) | [Java](./Problem5454/Solution.java) |
+1482 | [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [Java](./Problem5455/Solution.java) |
+1483 | [Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | [Java](./Problem5456/Solution.java) |
+1485 | [Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer//) | [Java](./Problem1485/Solution.java) |
+1486 | [XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/) | [Java](./Problem1486/Solution.java) |
+1487 | [Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/) | [Java](./Problem1487/Solution.java) |
