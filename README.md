@@ -1,7 +1,7 @@
 The code in this repository is my attempts at solving several algo-datastructure problems as found on  [Leetcode](https://leetcode.com/). The solutions here are not always the best or optimal. That being said, feel free to fork the repo and use them for any purposes. Good luck ! 
 
 ```
-Number of Problems solved : 291
+Number of Problems solved : 292
 ```
 
 Solutions in the following languages : 
