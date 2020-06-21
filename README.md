@@ -301,3 +301,4 @@ Solutions in the following languages :
 1485 | [Clone Binary Tree With Random Pointer](https://leetcode.com/problems/clone-binary-tree-with-random-pointer//) | [Java](./Problem1485/Solution.java) |
 1486 | [XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/) | [Java](./Problem1486/Solution.java) |
 1487 | [Making File Names Unique](https://leetcode.com/problems/making-file-names-unique/) | [Java](./Problem1487/Solution.java) |
+1488 | [Avoid Flood in The City](https://leetcode.com/problems/avoid-flood-in-the-city//) | [Java](./Problem1488/Solution.java) |
