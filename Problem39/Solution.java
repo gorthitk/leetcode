@@ -1,37 +1,34 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution
-{
-    public List<List<Integer>> combinationSum(int[] candidates, int target)
-    {
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
-        getCombinations(candidates, target, 0, new ArrayList<>(), result, 0);
+
+        backtrack(0, candidates, 0, target, new ArrayList<>(), result);
         return result;
     }
 
-    private void getCombinations(int[] candidates, int target, int currSum, List<Integer> curr,
-                                 List<List<Integer>> result, int idx)
-    {
-        if (currSum == target)
-        {
-            result.add(new ArrayList<>(curr));
+
+    private void backtrack(int start, int[] candidates, int sum, int target, List<Integer> current,
+                           List<List<Integer>> result) {
+        if (sum > target) {
             return;
         }
-        if (currSum > target)
-        {
+
+        if (sum == target) {
+            result.add(new ArrayList<>(current));
             return;
         }
-        for (int i = idx; i < candidates.length; i++)
-        {
-            curr.add(candidates[i]);
-            getCombinations(candidates, target, currSum + candidates[i], curr, result, i);
-            curr.remove(curr.size() - 1);
+
+
+        for (int i = start; i < candidates.length; i++) {
+            if (sum + candidates[i] > target) {
+                continue;
+            }
+            current.add(candidates[i]);
+            backtrack(i, candidates, sum + candidates[i], target, current, result);
+            current.remove(current.size() - 1);
         }
     }
 }

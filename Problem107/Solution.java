@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 
 /**
  * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; *

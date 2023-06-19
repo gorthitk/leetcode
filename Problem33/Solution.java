@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 public class Solution
 {
     public int search(int[] nums, int target)

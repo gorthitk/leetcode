@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 /* * Find the length of the common subsequence * Since only delete operation possible, subtract the length of common
 subsequence from sum of lengths of word1 and word2. */public class Solution
  */

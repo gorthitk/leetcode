@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 
 import java.util.function.BiConsumer;
 import java.util.function.BiPredicate;

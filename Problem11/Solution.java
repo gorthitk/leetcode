@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 public class Solution
 {    // Two pointers solution    public int maxArea(int[] height)    {        int maxArea = 0;        if (height ==
     // null || height.length == 0)            return maxArea;        int i = 0;        int j = height.length - 1;

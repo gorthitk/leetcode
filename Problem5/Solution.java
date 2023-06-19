@@ -1,32 +1,28 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
-public class Solution
-{
-    public String longestPalindrome(String s)
-    {
-        int start = 0, end = 0, longest = 0;
-        for (int i = 0; i < s.length(); i++)
-        {
-            int len = Math.max(getPalindomeLen(s, i, i + 1), getPalindomeLen(s, i, i));
-            if (len > longest)
-            {
-                longest = len;
-                start = i - (len - 1) / 2;
-                end = i + len / 2;
+class Solution {
+    public String longestPalindrome(String s) {
+        char[] arr = s.toCharArray();
+        int n = arr.length;
+        boolean[][] dp = new boolean[n][n];
+
+        int[] result = new int[]{0, 0};
+        int max = 1;
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = true;
+        }
+
+        for (int len = 2; len <= n; len++) {
+            for (int i = 0; i + len - 1 < n; i++) {
+                int j = i + len - 1;
+                dp[i][j] = arr[i] == arr[j] && (i + 1 <= j - 1 ? dp[i + 1][j - 1] : true);
+                if (dp[i][j] && max < j - i + 1) {
+                    result = new int[]{i, j};
+                    max = j - i + 1;
+                }
             }
         }
-        return s.substring(start, end + 1);
-    }
 
-    private int getPalindomeLen(String s, int left, int right)
-    {
-        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right))
-        {
-            left--;
-            right++;
-        }
-        return right - left - 1;
+
+        return s.substring(result[0], result[1] + 1);
+
     }
 }

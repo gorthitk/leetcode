@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 public class Solution {
     public void solve(char[][] board) {
         if (board == null || board.length == 0 || board[0].length == 0) {

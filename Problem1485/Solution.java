@@ -1,10 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 class Solution
 {
     private Map<Node, NodeCopy> lookup = new HashMap<>();

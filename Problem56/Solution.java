@@ -1,32 +1,52 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
-public class Solution
-{
-    public List<Interval> merge(List<Interval> intervals)
-    {
-        if (intervals == null || intervals.size() == 0)
-        {
-            return intervals;
-        }
-        intervals.sort((a, b) -> a.start != b.start ? a.start - b.start : a.end - b.end);
-        List<Interval> result = new ArrayList<>();
-        Interval prev = intervals.get(0);
-        for (int i = 1; i < intervals.size(); i++)
-        {
-            Interval current = intervals.get(i);
-            if (current.start > prev.end)
-            {
-                result.add(prev);
-                prev = current;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class Solution {
+    public int[][] merge(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> {
+            int idxCompare = a[0] == b[0] ? 1 : 0;
+            return Integer.compare(a[idxCompare], b[idxCompare]);
+        });
+
+
+        int n = intervals.length;
+        List<int[]> merged = new ArrayList<>();
+        int[] current = intervals[0];
+
+        for (int i = 1; i <= n; i++) {
+            if (i == n) {
+                merged.add(current);
+                break;
             }
-            else
-            {
-                prev.end = Math.max(current.end, prev.end);
+
+            // Otherwise.
+            if (isOverlap(current, intervals[i])) {
+                current = merge(current, intervals[i]);
+            } else {
+                merged.add(current);
+                current = intervals[i];
             }
         }
-        result.add(prev);
+
+        int[][] result = new int[merged.size()][2];
+
+        for (int i = 0; i < merged.size(); i++) {
+            result[i] = merged.get(i);
+        }
+
+
         return result;
+    }
+
+    private static int[] merge(int[] a, int [] b) {
+        return  new int[] {
+                a[0],
+                Math.max(a[1], b[1])
+        };
+    }
+
+    private static boolean isOverlap(int[] a, int[] b) {
+        return a[1] >= b[0];
     }
 }

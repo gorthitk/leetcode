@@ -1,57 +1,75 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+import java.util.HashMap;
+import java.util.Map;
 
-import java.util.*;
+class LRUCache {
+    private static class CacheNode {
+        int key;
+        int val;
+        CacheNode next;
+        CacheNode previous;
 
-public class LRUCache
-{
-    long time = 0;
-    int capacity;
-    Map<Integer, Integer> lookUp;
-    Map<Integer, Long> used;
-    PriorityQueue<Integer> queue;
+        CacheNode(int key, int val) {
+            this.key = key;
+            this.val = val;
+        }
+    }
 
-    public LRUCache(int capacity)
-    {
+    private int capacity;
+    private Map<Integer, CacheNode> nodeByKey;
+    private CacheNode head, tail;
+
+    public LRUCache(int capacity) {
         this.capacity = capacity;
-        lookUp = new HashMap<>();
-        used = new HashMap<>();
-        queue = new PriorityQueue<>(new Comparator<Integer>()
-        {
-            @Override
-            public int compare(Integer o1, Integer o2)
-            {
-                return (int) (used.get(o1) - used.get(o2));
-            }
-        });
+        this.nodeByKey = new HashMap<>();
+
+        this.tail = new CacheNode(-1, -1);
+        this.head = new CacheNode(-1, -1);
+
+        tail.previous = head;
+        head.next = tail;
     }
 
-    public int get(int key)
-    {
-        if (lookUp.containsKey(key))
-        {
-            used.put(key, time++);
-            queue.remove(key);
-            queue.add(key);
-            return lookUp.get(key);
+    public int get(int key) {
+        if (!nodeByKey.containsKey(key)) {
+            return -1;
         }
-        return -1;
+
+        CacheNode node = nodeByKey.get(key);
+        removeNode(node);
+        addNode(node);
+
+        return node.val;
     }
 
-    public void put(int key, int value)
-    {
-        if (!lookUp.containsKey(key) && lookUp.size() == this.capacity)
-        {
-            int removed = queue.poll();
-            lookUp.remove(removed);
-            used.remove(removed);
-            queue.remove(removed);
+    public void put(int key, int value) {
+        if (nodeByKey.containsKey(key)) {
+            removeNode(nodeByKey.get(key));
         }
-        queue.remove(key);
-        lookUp.put(key, value);
-        used.put(key, time++);
-        queue.add(key);
+
+        CacheNode node = new CacheNode(key, value);
+        nodeByKey.put(key,node);
+        addNode(node);
+
+        if (nodeByKey.size() > capacity) {
+            CacheNode toDelete = head.next;
+            removeNode(toDelete);
+            nodeByKey.remove(toDelete.key);
+        }
+    }
+
+
+    private void addNode(CacheNode node) {
+        CacheNode prev = tail.previous;
+        prev.next = node;
+        node.previous = prev;
+        node.next = tail;
+        tail.previous = node;
+
+    }
+
+    private void removeNode(CacheNode node) {
+        node.previous.next = node.next;
+        node.next.previous = node.previous;
     }
 }
+

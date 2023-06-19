@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 public class Solution
 {
     public ListNode removeElements(ListNode head, int val)

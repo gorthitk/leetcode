@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 class Solution
 {
     public int minDiffInBST(TreeNode root)

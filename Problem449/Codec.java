@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 
 public class Codec
 {    // Encodes a tree to a single string.    public String serialize(TreeNode root)    {        if (root == null)

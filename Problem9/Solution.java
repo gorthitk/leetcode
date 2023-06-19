@@ -1,31 +1,15 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
-public class Solution
-{
-    public boolean isPalindrome(int x)
-    {
-        if (x < 0)
-        {
+class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0) {
             return false;
         }
-        int places = 1;
-        while (x / places >= 10)
-        {
-            places = places * 10;
+        int reverse = 0;
+        int a = x;
+        while (a > 0) {
+            reverse = reverse * 10 + a % 10;
+            a = a / 10;
         }
-        while (x != 0)
-        {
-            int tail = x % 10;
-            int head = x / places;
-            if (tail != head)
-            {
-                return false;
-            }
-            x = (x % places) / 10;
-            places = places / 100;
-        }
-        return true;
+
+        return reverse == x;
     }
 }

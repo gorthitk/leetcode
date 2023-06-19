@@ -3,10 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 class Solution
 {
     public int findLeastNumOfUniqueInts(int[] arr, int k)

@@ -1,39 +1,51 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
-public class Solution
-{
-    public int myAtoi(String str)
-    {
-        if (str == null || str.length() == 0)
-        {
-            return 0;
+class Solution {
+    public int myAtoi(String s) {
+        char[] arr = s.toCharArray();
+        int start = 0;
+
+        while (start < arr.length && arr[start] == ' ') {
+            start++;
         }
-        int index = 0;
-        str = str.trim();
-        int n = str.length();
-        boolean negativeNum = false;
-        if (str.charAt(index) == '+' || str.charAt(index) == '-')
-        {
-            negativeNum = str.charAt(index) == '-' ? true : false;
-            index++;
-        }
-        int result = 0;
-        while (index < n)
-        {
-            int ch = str.charAt(index) - '0';
-            if (ch > 9 || ch < 0)
-            {
+
+        int res = 0;
+        boolean isNeg = false;
+        int cutOff = Integer.MAX_VALUE / 10;
+
+        for (int i = start; i < arr.length; i++) {
+            char ch = arr[i];
+
+            if ((ch == '+' || ch == '-') && i == start) {
+                isNeg = ch == '-';
+                continue;
+            }
+
+
+            if (!isDigit(ch)) {
                 break;
             }
-            if (result > Integer.MAX_VALUE / 10 || Integer.MAX_VALUE / 10 == result && Integer.MAX_VALUE % 10 < ch)
-            {
-                return negativeNum == true ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+
+
+            int d = ch - '0';
+            if (res > cutOff) {
+                return isNeg ? Integer.MIN_VALUE : Integer.MAX_VALUE;
             }
-            result = result * 10 + ch;
-            index++;
+
+            if (res == cutOff) {
+                if (isNeg && d >= 8) {
+                    return Integer.MIN_VALUE;
+                }
+
+                if (!isNeg && d >= 7) {
+                    return Integer.MAX_VALUE;
+                }
+            }
+            res = res * 10 + d;
         }
-        return negativeNum == true ? result * -1 : result;
+
+        return isNeg ? -1 * res : res;
+    }
+
+    private boolean isDigit(char ch) {
+        return ch >= '0' && ch <= '9';
     }
 }

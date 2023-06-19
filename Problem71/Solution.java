@@ -1,35 +1,35 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+class Solution {
+    public String simplifyPath(String path) {
+        List<String> dirs = new ArrayList<>();
 
-import java.util.Stack;
+        String[] pDirs = path.split("/");
 
-public class Solution
-{
-    public String simplifyPath(String path)
-    {
-        Stack<String> dirs = new Stack<>();
-        for (String dir : path.split("/"))
-        {
-            if (dir.equals("..") && !dirs.isEmpty())
-            {
-                dirs.pop();
+        for (String pDir : pDirs) {
+            if (pDir.isEmpty()) {
+                continue;
             }
-            else
-            {
-                if (dir.equals(".") || dir.equals("..") || dir.equals(""))
-                {
-                    continue;
+
+            if (pDir.equals(".")) {
+                continue;
+            }
+
+            if (pDir.equals("..")) {
+                if (!dirs.isEmpty()) {
+                    dirs.remove(dirs.size() - 1);
                 }
-                dirs.push(dir);
+                continue;
             }
+
+            dirs.add(pDir);
         }
-        String simplifiedPath = "";
-        while (!dirs.isEmpty())
-        {
-            simplifiedPath = "/" + dirs.pop() + simplifiedPath;
+
+        StringBuilder sb = new StringBuilder();
+
+        for (String d : dirs) {
+            sb.append("/");
+            sb.append(d);
         }
-        return simplifiedPath.isEmpty() ? "/" : simplifiedPath;
+
+        return sb.isEmpty() ? "/" : sb.toString();
     }
 }

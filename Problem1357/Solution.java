@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 class Cashier
 {
     private final int[] pricesByProductId;

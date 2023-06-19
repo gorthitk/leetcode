@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 class Solution
 {    // Brute force solution    public int[] dailyTemperatures(int[] temperatures)    {        // Brute force
     // solution        final int numOfTemperatures = temperatures.length;        final int[] nextHighestTemperature =

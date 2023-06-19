@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 class Solution
 {
     private int[][] directions = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};

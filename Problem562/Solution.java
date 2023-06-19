@@ -1,7 +1,4 @@
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 public class Solution
 {    //Brute force solution    public int longestLine(int[][] M)    {        int len = 0;        if (M == null || M
     // .length == 0 || M[0].length == 0)        {            return len;        }        int rows = M.length;

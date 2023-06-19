@@ -2,10 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
 
-/**
- * @author tgorthi
- * @since Jun 2020
- */
+
 class Solution
 {
     public int[] avoidFlood(int[] rains)
