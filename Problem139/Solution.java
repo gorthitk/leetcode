@@ -1,33 +1,58 @@
-
-
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-class Solution
-{
-    public boolean wordBreak(String s, List<String> wordDict)
-    {
-        final Set<String> words = new HashSet<>(wordDict);
-        final int n = s.length();
+class Solution {
 
-        final boolean[] dp = new boolean[n];
+    class TrieNode {
 
-        // dp[i] -> can be broken down if S[i..j] is in the dictionary and dp[j] = true;
+        TrieNode[] children;
+        boolean isEnd;
 
-        for (int i = n - 1; i >= 0; i--)
-        {
-            for (int j = i; j < n && !dp[i]; j++)
-            {
-                if (j == n - 1 || dp[j + 1])
-                {
-                    String subStr = s.substring(i, j + 1);
-                    dp[i] = words.contains(subStr);
+        TrieNode() {
+            this.children = new TrieNode[26];
+        }
+    }
+
+    public boolean wordBreak(String s, List<String> wordDict) {
+        char[] arr = s.toCharArray();
+        int n = arr.length;
+        TrieNode root = new TrieNode();
+        populate(root, wordDict);
+
+        boolean[] dp = new boolean[n];
+        for (int i = 0; i < n; i++) {
+            if (i == 0 || dp[i - 1]) {
+                TrieNode curr = root;
+                for (int j = i; j < n; j++) {
+                    int idx = arr[j] - 'a';
+                    if (curr.children[idx] == null) {
+                        break;
+                    }
+
+                    curr = curr.children[idx];
+                    if (curr.isEnd) {
+                        dp[j] = true;
+                    }
                 }
             }
         }
 
+        return dp[n-1];
+    }
 
-        return dp[0];
+    private void populate(TrieNode root, List<String> wordDict) {
+        for (String word : wordDict) {
+            TrieNode curr = root;
+            for (int i = 0; i < word.length(); i++) {
+                int idx = word.charAt(i) - 'a';
+                if (curr.children[idx] == null) {
+                    curr.children[idx] = new TrieNode();
+                }
+
+                curr = curr.children[idx];
+                if (i == word.length() - 1) {
+                    curr.isEnd = true;
+                }
+            }
+        }
     }
 }

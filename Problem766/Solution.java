@@ -1,18 +1,16 @@
+class Solution {
+    public boolean isToeplitzMatrix(int[][] matrix) {
+        int n = matrix.length, m = matrix[0].length;
 
-class Solution
-{
-    public boolean isToeplitzMatrix(int[][] matrix)
-    {
-        for (int i = 0; i < matrix.length - 1; i++)
-        {
-            for (int j = 0; j < matrix[0].length - 1; j++)
-            {
-                if (matrix[i][j] != matrix[i + 1][j + 1])
-                {
+
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < m; j++) {
+                if (matrix[i][j] != matrix[i-1][j-1]) {
                     return false;
                 }
             }
         }
+
         return true;
     }
 }

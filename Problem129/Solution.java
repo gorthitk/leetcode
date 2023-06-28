@@ -1,27 +1,23 @@
-
-public class Solution
-{
-    private int sum = 0;
-
-    public int sumNumbers(TreeNode root)
-    {
-        getSum(root, 0);
-        return sum;
+class Solution {
+    int result = 0;
+    public int sumNumbers(TreeNode root) {
+        add(root, 0);
+        return result;
     }
 
-    private void getSum(TreeNode root, int prevSum)
-    {
-        if (root == null)
-        {
+
+    private void add(TreeNode node, int curr) {
+        if (node == null) {
             return;
         }
-        int currentSum = prevSum * 10 + root.val;
-        if (root.left == null && root.right == null)
-        {
-            sum += currentSum;
+
+        int next = curr * 10 + node.val;
+        if (node.left == null && node.right == null) {
+            result += next;
             return;
         }
-        getSum(root.left, currentSum);
-        getSum(root.right, currentSum);
+
+        add(node.left, next);
+        add(node.right, next);
     }
 }

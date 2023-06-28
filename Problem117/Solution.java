@@ -1,43 +1,27 @@
-
-
-import java.util.*;
-
-public class Solution
-{
-    public void connect(TreeLinkNode root)
-    {
-        Queue<TreeLinkNode> stack = new LinkedList<>();
-        if (root != null)
-        {
-            stack.add(root);
+class Solution {
+    public Node connect(Node root) {
+        if (root == null) {
+            return null;
         }
-        while (!stack.isEmpty())
-        {
-            Queue<TreeLinkNode> childNodesStack = new LinkedList();
-            TreeLinkNode prev = stack.poll();
-            if (prev.left != null)
-            {
-                childNodesStack.add(prev.left);
-            }
-            if (prev.right != null)
-            {
-                childNodesStack.add(prev.right);
-            }
-            while (!stack.isEmpty())
-            {
-                TreeLinkNode next = stack.poll();
-                prev.next = next;
-                prev = next;
-                if (next.left != null)
-                {
-                    childNodesStack.add(next.left);
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+
+        while(!queue.isEmpty()) {
+            int sz = queue.size();
+            Node prev = null;
+            while (sz-- > 0) {
+                Node curr = queue.poll();
+                if (prev != null) {
+                    prev.next = curr;
                 }
-                if (next.right != null)
-                {
-                    childNodesStack.add(next.right);
-                }
+                prev = curr;
+
+                if (curr.left != null) queue.add(curr.left);
+                if (curr.right != null) queue.add(curr.right);
             }
-            stack = childNodesStack;
         }
+
+        return root;
     }
 }

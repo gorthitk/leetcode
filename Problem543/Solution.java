@@ -1,21 +1,24 @@
+class Solution {
 
+    int result = 0;
+    public int diameterOfBinaryTree(TreeNode root) {
+        longestPath(root);
+        return result;
+    }
 
-import Solution.TreeNode;
-
-public class Solution
-{
-    public int diameterOfBinaryTree(TreeNode root)
-    {
-        if (root == null)
-        {
+    private int longestPath(TreeNode node) {
+        if (node == null) {
             return 0;
         }
-        return Math.max(Math.max(diameterOfBinaryTree(root.left), diameterOfBinaryTree(root.right)),
-                height(root.left) + height(root.right));
+
+
+        int left = longestPath(node.left);
+        int right = longestPath(node.right);
+
+        result = Math.max(result, 1 + left + right);
+
+
+        return 1 + Math.max(left, right);
     }
 
-    private int height(TreeNode node)
-    {
-        return node != null ? 1 + Math.max(height(node.right), height(node.left)) : 0;
-    }
 }

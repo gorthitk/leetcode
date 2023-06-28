@@ -1,24 +1,16 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ThreadLocalRandom;
-
 class Solution {
-
-    private Map<Integer, List<Integer>> indicies;
-    public Solution(int[] nums) {
-        this.indicies = new HashMap<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            indicies.computeIfAbsent(nums[i], k -> new ArrayList<>())
-                    .add(i);
+    public int divide(int dividend, int divisor) {
+        if (dividend < divisor) {
+            return 0;
         }
-    }
+        int val = divisor;
+        int powerOfTwo = 1;
+        while (val + val < dividend) {
+            powerOfTwo += 1;
+            val += val;
+        }
 
-    public int pick(int target) {
-        int random = ThreadLocalRandom.current().nextInt(0, indicies.get(target).size());
 
-        return indicies.get(target).get(random);
+        return powerOfTwo + divide(dividend - val, divisor);
     }
 }

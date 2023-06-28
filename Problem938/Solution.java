@@ -1,20 +1,23 @@
-
-class Solution
-{
-    public int rangeSumBST(TreeNode root, int L, int R)
-    {
-        if (root == null)
-        {
+class Solution {
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        if (root == null) {
             return 0;
         }
-        if (root.val > R)
-        {
-            return rangeSumBST(root.left, L, R);
+
+        if (root.val > high) {
+            return rangeSumBST(root.left, low, high);
         }
-        if (root.val < L)
-        {
-            return rangeSumBST(root.right, L, R);
+
+
+        if (root.val < low) {
+            return rangeSumBST(root.right, low, high);
         }
-        return root.val + rangeSumBST(root.left, L, R) + rangeSumBST(root.right, L, R);
+
+
+        int left = rangeSumBST(root.left, low, high);
+        int right = rangeSumBST(root.right, low, high);
+
+
+        return left + right + (root.val >= low && root.val <= high ? root.val : 0);
     }
 }

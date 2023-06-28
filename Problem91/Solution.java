@@ -1,24 +1,27 @@
-
-public class Solution
-{
-    public int numDecodings(String s)
-    {
-        if (s == null || s.length() == 0 || s.charAt(0) == '0')
-        {
+class Solution {
+    public int numDecodings(String s) {
+        char[] arr = s.toCharArray();
+        if (arr[0] == '0') {
             return 0;
         }
-        int n = s.length();
-        int[] dp = new int[n + 1];
-        dp[n] = 1;
-        dp[n - 1] = s.charAt(n - 1) == '0' ? 0 : 1;
-        for (int i = n - 2; i >= 0; i--)
-        {
-            if (s.charAt(i) == '0')
-            {
-                continue;
+
+        int n = arr.length;
+
+        int[] counts = new int[n];
+        counts[0] = 1;
+        for (int i = 1; i < n; i++) {
+            char ch = arr[i];
+            if (ch >= '1' && ch <= '9') {
+                counts[i] += counts[i-1];
             }
-            dp[i] = ((s.charAt(i) - '0') * 10 + (s.charAt(i + 1) - '0')) <= 26 ? dp[i + 1] + dp[i + 2] : dp[i + 1];
+
+            if (arr[i - 1] == '1' || (arr[i - 1] == '2' && ch <= '6')) {
+                counts[i] += i - 2 < 0 ? 1 : counts[i - 2];
+            }
         }
-        return dp[0];
+
+
+
+        return counts[n - 1];
     }
 }

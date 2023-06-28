@@ -1,16 +1,23 @@
+class Solution {
+    ListNode curr;
+    public ListNode reverseList(ListNode head) {
+        ListNode dummy = new ListNode();
+        curr = dummy;
 
-public class Solution
-{
-    public ListNode reverseList(ListNode head)
-    {
-        if (head == null || head.next == null)
-        {
-            return head;
+        reverse(head);
+
+        return dummy.next;
+    }
+
+
+    private void reverse(ListNode node) {
+        if (node == null) {
+            return;
         }
-        ListNode node = head.next;
-        head.next = null;
-        ListNode reverse = reverseList(node);
-        node.next = head;
-        return reverse;
+
+        reverse(node.next);
+        node.next = null;
+        curr.next = node;
+        curr = node;
     }
 }

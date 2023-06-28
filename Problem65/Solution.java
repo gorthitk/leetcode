@@ -1,51 +1,57 @@
+class Solution {
+    private static final Set<Character> allowed = Set.of('+', '-', 'e', 'E', '.');
+    public boolean isNumber(String s) {
 
-public class Solution
-{
-    public boolean isNumber(String s)
-    {
-        s = s.trim();
-        int count_decimal = 0;
-        int count_e = 0;
-        int count_digit = 0;
-        for (int i = 0; i < s.length(); i++)
-        {
-            char c = s.charAt(i);
-            if (!Character.isDigit(c))
-            {
-                if (c == '.')
-                {
-                    count_decimal++;
-                    if (count_decimal > 1 || count_e != 0)
-                    {
-                        return false;
-                    }
-                }
-                else if (c == 'e')
-                {
-                    count_e++;
-                    if (count_e > 1 || count_digit == 0)
-                    {
-                        return false;
-                    }
-                    count_digit = 0;
-                }
-                else if (c == '-' || c == '+')
-                {
-                    if (i != 0 && s.charAt(i - 1) != 'e')
-                    {
-                        return false;
-                    }
-                }
-                else
-                {
+        boolean seenDigit = false;
+        boolean seenDecimal = false;
+        boolean seenE = false;
+
+        int n = s.length();
+        char[] arr = s.toCharArray();
+
+
+
+        for (int i = 0; i < n; i++) {
+            char ch = arr[i];
+            if (!allowed.contains(ch) && !isDigit(ch)) {
+                return false;
+            }
+            if (isDigit(ch)) {
+                seenDigit = true;
+                continue;
+            }
+
+            if (ch == '+' || ch == '-') {
+                if (i > 0 && arr[i-1] != 'e' && arr[i-1] != 'E') {
                     return false;
                 }
             }
-            else
-            {
-                count_digit++;
+
+            if (ch == '.') {
+                if (seenDecimal || seenE) {
+                    return false;
+                }
+
+                seenDecimal = true;
+            }
+
+
+            if (ch == 'e' || ch == 'E') {
+                if (seenE || !seenDigit) {
+                    return false;
+                }
+
+                seenE = true;
+                seenDigit = false;
             }
         }
-        return count_digit > 0;
+
+
+        return seenDigit;
+    }
+
+
+    private static boolean isDigit(char ch) {
+        return ch >= '0' && ch <= '9';
     }
 }
