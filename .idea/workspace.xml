@@ -2,81 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4059c6-9840-4dd9-99ce-9667c8ae7028" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Problem1047/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1207/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1281/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1299/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1351/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1460/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1480/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1512/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1528/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1575/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem163/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1748/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem1920/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem2462/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem283/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem350/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem415/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem463/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem496/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem523/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem525/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem735/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem824/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem832/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem897/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problem905/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem101/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem101/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1091/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem1091/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1123/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem1123/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem117/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem117/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem129/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem129/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1306/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem1306/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1345/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem1345/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem138/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem138/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem139/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem139/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem152/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem152/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem167/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem167/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem173/BSTIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem173/BSTIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem1996/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem1996/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem206/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem206/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem2090/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem2090/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem2210/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem2210/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem2235/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem2235/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem2256/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem2256/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem227/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem227/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem271/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem271/Codec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem286/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem286/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem298/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem298/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem32/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem32/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem426/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem426/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem45/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem45/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem53/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem53/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem543/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem543/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem55/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem55/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem557/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem557/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem617/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem617/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem62/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem62/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem63/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem63/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem65/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem65/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem695/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem695/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem733/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem733/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem766/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem766/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem791/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem791/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem863/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem863/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem876/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem876/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem896/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem896/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem91/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem91/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem921/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem921/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem938/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem938/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Problem958/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem958/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BSTIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BSTIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Codec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem116/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem116/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem1197/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem1197/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem1209/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem1209/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem121/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem121/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem122/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem122/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem13/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem13/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem153/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem153/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem17/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem17/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem189/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem189/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem202/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem202/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem207/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem207/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem234/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem234/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem253/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem253/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem277/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem277/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem278/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem278/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem348/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem348/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem50/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem50/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem536/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem536/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem623/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem623/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem658/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem658/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem670/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem670/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem763/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem763/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem939/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem939/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem941/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem941/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem986/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem986/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -91,20 +43,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Problem415/Solution.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Problem2462/Solution.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -129,36 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Problem101/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem62/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem129/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1996/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem896/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem958/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem543/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem876/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem167/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem63/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem53/Solution.java" />
-        <option value="$PROJECT_DIR$/src/Node.java" />
-        <option value="$PROJECT_DIR$/Problem426/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1920/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1512/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1480/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1281/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem938/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1528/Solution.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/Problem832/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem557/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem617/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1351/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem897/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1748/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem905/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem206/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1207/Solution.java" />
-        <option value="$PROJECT_DIR$/Problem1299/Solution.java" />
         <option value="$PROJECT_DIR$/Problem1460/Solution.java" />
         <option value="$PROJECT_DIR$/Problem496/Solution.java" />
         <option value="$PROJECT_DIR$/Problem1047/Solution.java" />
@@ -167,7 +89,6 @@
         <option value="$PROJECT_DIR$/Problem65/Solution.java" />
         <option value="$PROJECT_DIR$/Problem32/Solution.java" />
         <option value="$PROJECT_DIR$/Problem1575/Solution.java" />
-        <option value="$PROJECT_DIR$/src/Solution.java" />
         <option value="$PROJECT_DIR$/Problem139/Solution.java" />
         <option value="$PROJECT_DIR$/Problem117/Solution.java" />
         <option value="$PROJECT_DIR$/Problem735/Solution.java" />
@@ -180,6 +101,37 @@
         <option value="$PROJECT_DIR$/Problem415/Solution.java" />
         <option value="$PROJECT_DIR$/Problem523/Solution.java" />
         <option value="$PROJECT_DIR$/Problem2462/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem278/Solution.java" />
+        <option value="$PROJECT_DIR$/src/TicTacToe.java" />
+        <option value="$PROJECT_DIR$/Problem348/TicTacToe.java" />
+        <option value="$PROJECT_DIR$/Problem536/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem140/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem827/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem277/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem340/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem939/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem1197/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem13/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem121/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem122/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem670/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem763/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem941/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem234/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem202/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem986/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem1209/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem623/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem253/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem50/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem189/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem207/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem658/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem153/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem17/Solution.java" />
+        <option value="$PROJECT_DIR$/Problem116/Solution.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Solution.java" />
       </list>
     </option>
   </component>
@@ -197,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -258,6 +211,21 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem14" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem17" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem32" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -284,6 +252,11 @@
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem49" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem50" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -348,7 +321,22 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem116" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem117" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem121" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem122" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -378,12 +366,27 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem140" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem146" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem152" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem153" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem155" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -403,12 +406,32 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem189" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem202" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem206" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem207" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem227" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem234" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -423,7 +446,22 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem253" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem271" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem277" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem278" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -453,12 +491,27 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem340" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem346" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem348" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem350" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem367" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -523,6 +576,11 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem536" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem543" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -539,6 +597,21 @@
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem617" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem623" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem658" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem670" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -563,6 +636,11 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem763" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem766" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -574,6 +652,11 @@
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem824" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem827" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -623,6 +706,16 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem939" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem941" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem953" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -634,6 +727,11 @@
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem973" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem986" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -658,7 +756,17 @@
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem1197" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="Problem1207" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="Problem1209" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetcode-git" type="b2602c69:ProjectViewProjectNode" />
@@ -779,7 +887,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -837,7 +944,8 @@
       <workItem from="1687290598896" duration="13113000" />
       <workItem from="1687398634650" duration="6782000" />
       <workItem from="1687485095034" duration="8828000" />
-      <workItem from="1687552748390" duration="10621000" />
+      <workItem from="1687552748390" duration="20062000" />
+      <workItem from="1688062968887" duration="1140000" />
     </task>
     <task id="LOCAL-00001" summary="Large Chunk of Changes">
       <created>1687211329471</created>
@@ -846,17 +954,24 @@
       <option name="project" value="LOCAL" />
       <updated>1687211329471</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Large Chunk of Changes">
+      <created>1687912239009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687912239009</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90552000" />
+    <option name="totallyTimeSpent" value="101133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2048" y="25" width="2560" height="1415" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2585385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2605242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -972,239 +1087,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Problem543/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem875/Solution.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem876/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem167/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem63/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem64/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem53/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1428/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem426/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1920/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1512/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="52" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1480/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1281/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem938/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1528/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem832/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem557/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem617/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1351/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem897/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1748/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem905/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem206/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1207/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1299/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1460/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem496/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem128/Solution.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem1047/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Problem163/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Problem525/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1248,13 +1130,6 @@
             <element signature="e#136#137#0" expanded="true" />
             <element signature="e#192#193#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1324,17 +1199,260 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Problem2462/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Problem415/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem278/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="283" column="17" selection-start-line="283" selection-start-column="17" selection-end-line="283" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="857" column="33" selection-start-line="857" selection-start-column="33" selection-end-line="857" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="352">
+            <caret line="101" column="69" selection-start-line="101" selection-start-column="69" selection-end-line="101" selection-end-column="69" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicTacToe.java" />
+    <entry file="file://$PROJECT_DIR$/Problem348/TicTacToe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem536/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem140/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem827/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem277/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem340/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem939/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem13/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem121/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem122/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem763/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Problem2462/Solution.java">
+    <entry file="file://$PROJECT_DIR$/Problem202/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        <state relative-caret-position="360">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem234/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem941/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem670/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem986/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem1209/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem623/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem1197/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem253/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem189/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem207/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem658/Solution.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem50/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem153/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem17/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problem116/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>

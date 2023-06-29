@@ -1,16 +1,6 @@
 class Solution {
-    public int divide(int dividend, int divisor) {
-        if (dividend < divisor) {
-            return 0;
-        }
-        int val = divisor;
-        int powerOfTwo = 1;
-        while (val + val < dividend) {
-            powerOfTwo += 1;
-            val += val;
-        }
+    public void nextPermutation(int[] nums) {
+        int n = nums.length;
 
-
-        return powerOfTwo + divide(dividend - val, divisor);
     }
 }

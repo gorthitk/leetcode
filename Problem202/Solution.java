@@ -1,22 +1,25 @@
+class Solution {
+    public boolean isHappy(int n) {
+        Set<Integer> seen = new HashSet<>();
 
+        while (n != 1) {
+            if (!seen.add(n)) {
+                return false;
+            }
 
-import java.util.HashSet;
+            if (n < 10) {
+                return n == 7;
+            }
 
-public class Solution
-{
-    HashSet<Integer> set = new HashSet<>();
+            int next = 0;
+            while (n > 0) {
+                next += (n % 10) * (n % 10);
+                n = n / 10;
+            }
 
-    public boolean isHappy(int n)
-    {
-        set.add(n);
-        int next = 0;
-        while (n >= 10)
-        {
-            next += Math.pow(n % 10, 2);
-            n /= 10;
+            n = next;
         }
-        next += Math.pow(n % 10, 2);
-        n = next;
-        return n == 1 ? true : !set.contains(n) && isHappy(n);
+
+        return true;
     }
 }

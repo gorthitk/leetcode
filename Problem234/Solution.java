@@ -1,30 +1,28 @@
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        Stack<Integer> stack = new Stack<>();
 
-public class Solution
-{
-    public boolean isPalindrome(ListNode head)
-    {
         ListNode slow = head;
         ListNode fast = head;
-        Stack<Integer> firstHalf = new Stack<>();
-        while (fast != null && fast.next != null)
-        {
-            firstHalf.add(slow.val);
+        while(fast.next != null && fast.next.next != null) {
+            stack.add(slow.val);
             slow = slow.next;
             fast = fast.next.next;
         }
-        if (fast != null)
-        {
-            slow = slow.next;
+
+        if (fast.next != null) {
+            stack.add(slow.val);
         }
-        while (slow != null)
-        {
-            if (slow.val != firstHalf.peek())
-            {
+
+        ListNode tail = slow.next;
+
+        while (tail != null) {
+            if (tail.val != stack.pop()) {
                 return false;
             }
-            firstHalf.pop();
-            slow = slow.next;
+            tail = tail.next;
         }
-        return true;
+
+        return stack.isEmpty();
     }
 }
