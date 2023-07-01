@@ -1,19 +1,15 @@
-
-public class Solution
-{
-    public int majorityElement(int[] nums)
-    {
-        int count = 1;
-        int elementIdx = 0;
-        for (int i = 1; i < nums.length; i++)
-        {
-            count = nums[i] == nums[elementIdx] ? count + 1 : count - 1;
-            if (count < 0)
-            {
-                elementIdx = i;
-                count = 1;
+class Solution {
+    public int majorityElement(int[] nums) {
+        int result = nums[0];
+        int count = 0;
+        for (int n : nums) {
+            if (count == 0) {
+                result = n;
             }
+
+            count += n == result ? 1 : -1;
         }
-        return nums[elementIdx];
+
+        return result;
     }
 }

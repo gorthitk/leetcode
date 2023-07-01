@@ -1,38 +1,71 @@
+class Solution {
+    public int search(int[] nums, int target) {
+        int n = nums.length;
 
-public class Solution
-{
-    public int search(int[] nums, int target)
-    {
-        if (nums == null || nums.length == 0)
-        {
+        if (n == 1) {
+            return nums[0] == target ? 0 : -1;
+        }
+
+        int pivot = findPivot(nums);
+
+        if (pivot == -1) {
             return -1;
         }
-        int n = nums.length;
-        int low = 0;
-        int hi = n - 1;
-        while (low < hi)
-        {
-            int mid = (low + hi) / 2;
-            if (nums[mid] > nums[hi])
-            {
-                low = mid + 1;
-            }
-            else
-            {
-                hi = mid;
-            }
+
+        if (pivot == 0) {
+            return search(nums, 0, n - 1, target);
         }
-        return getTargetIdx(nums, target < nums[0] ? low : 0, target > nums[n - 1] ? low - 1 : nums.length - 1, target);
+
+        if (target > nums[n - 1]) {
+            return search(nums, 0, pivot - 1, target);
+        }
+
+        return search(nums, pivot, n - 1, target);
     }
 
-    private int getTargetIdx(int[] nums, int start, int end, int target)
-    {
-        if (start > end)
-        {
-            return -1;
+    private int search(int[] nums, int l, int r, int target) {
+        while (l <= r) {
+            int mid = (r + l) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            }
+
+            if (nums[mid] > target) {
+                r = mid - 1;
+            } else {
+                l = mid + 1;
+            }
         }
-        int mid = start + (end - start) / 2;
-        return nums[mid] == target ? mid : nums[mid] < target ? getTargetIdx(nums, mid + 1, end, target) :
-                getTargetIdx(nums, start, mid - 1, target);
+
+        return -1;
+    }
+
+
+    private int findPivot(int[] nums) {
+        if (nums[0] < nums[nums.length - 1]) {
+            return 0;
+        }
+
+        int i = 0, j = nums.length - 1;
+        while (i <= j) {
+            int mid = (j + i) / 2;
+
+            if (nums[mid] > nums[mid + 1]) {
+                return mid + 1;
+            }
+
+            if (nums[mid] < nums[mid - 1]) {
+                return mid;
+            }
+
+            if (nums[mid] > nums[0]) {
+                i = mid + 1;
+            } else {
+                j = mid -1;
+            }
+        }
+
+
+        return -1;
     }
 }
