@@ -1,42 +1,35 @@
-
-public class Solution
-{
-    public int[] searchRange(int[] nums, int target)
-    {
-        int[] result = new int[]{-1, -1};
-        binarySearch(nums, target, 0, nums.length - 1, result);
-        return result;
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        // O(logn)
+        return search(nums, target, 0, nums.length - 1);
     }
 
-    private void binarySearch(int[] nums, int target, int start, int end, int[] result)
-    {
-        if (start < 0 || end >= nums.length || start > end)
-        {
-            return;
+
+    private int[] search(int[] nums, int target, int start, int end) {
+        if (start > end) {
+            return new int[] {-1, -1};
         }
-        int mid = start + (end - start) / 2;
-        if (nums[mid] == target)
-        {
-            int i = mid - 1;
-            int j = mid + 1;
-            while (i >= 0 && nums[i] == target)
-            {
-                i--;
-            }
-            while (j < nums.length && nums[j] == target)
-            {
-                j++;
-            }
-            result[0] = i + 1;
-            result[1] = j - 1;
+        int mid = (end + start) / 2;
+        if (nums[mid] > target) {
+            return search(nums, target, start, mid - 1);
         }
-        else if (nums[mid] > target)
-        {
-            binarySearch(nums, target, start, mid - 1, result);
+
+        if (nums[mid] < target) {
+            return search(nums, target, mid + 1, end);
         }
-        else
-        {
-            binarySearch(nums, target, mid + 1, end, result);
+
+        int[] left = search(nums, target, start, mid - 1);
+        int[] right = search(nums, target, mid + 1, end);
+
+        int[] result = new int[] {mid, mid};
+        if (left[0] != -1) {
+            result[0] = left[0];
         }
+
+        if (right[1] != -1) {
+            result[1] = right[1];
+        }
+
+        return result;
     }
 }

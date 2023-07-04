@@ -1,24 +1,18 @@
-
-public class Solution
-{
-    public boolean increasingTriplet(int[] nums)
-    {
-        int min = Integer.MAX_VALUE, secondMin = Integer.MAX_VALUE;
-        for (int num : nums)
-        {
-            if (num <= min)
-            {
-                min = num;
-            }
-            else if (num < secondMin)
-            {
-                secondMin = num;
-            }
-            else if (num > secondMin)
-            {
+class Solution {
+    public boolean increasingTriplet(int[] nums) {
+        int n = nums.length;
+        int first = Integer.MAX_VALUE, second = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            int num = nums[i];
+            if (num <= first) {
+                first = num;
+            } else if (num <= second) {
+                second = num;
+            } else {
                 return true;
             }
         }
+
         return false;
     }
 }

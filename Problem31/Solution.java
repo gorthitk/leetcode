@@ -1,49 +1,35 @@
-
-public class Solution
-{
-    public void nextPermutation(int[] nums)
-    {
+class Solution {
+    public void nextPermutation(int[] nums) {
+        // find the number that needs to replaced.
         int n = nums.length;
-        int j = n - 1;
-        for (; j >= 1; j--)
-        {
-            if (nums[j] > nums[j - 1])
-            {
-                break;
+        int i = n - 2;
+        while (i >= 0 && nums[i + 1] <= nums[i]) {
+            i--;
+        }
+
+        if (i >= 0) {
+            int j = n - 1;
+            // find the first number smaller than the current number.
+            while (nums[j] <= nums[i]) {
+                j--;
             }
+
+            swap(nums, i, j);
         }
-        if (j != 0)
-        {
-            swap(nums, j - 1);
-        }
-        reverse(nums, j);
+
+        reverse(nums, i + 1);
     }
 
-    private void reverse(int[] nums, int j)
-    {
-        int start = j;
-        int end = nums.length - 1;
-        while (start < end)
-        {
-            int tmp = nums[start];
-            nums[start] = nums[end];
-            nums[end] = tmp;
-            start++;
-            end--;
+    private static void reverse(int[] nums, int begin) {
+        int i = begin, j = nums.length - 1;
+        while (i < j) {
+            swap(nums, i++, j--);
         }
     }
 
-    private void swap(int[] nums, int j)
-    {
-        for (int i = nums.length - 1; i > j; i--)
-        {
-            if (nums[i] > nums[j])
-            {
-                int tmp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = tmp;
-                break;
-            }
-        }
+    private static void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
     }
 }

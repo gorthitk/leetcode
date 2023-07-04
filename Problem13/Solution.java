@@ -10,23 +10,27 @@ class Solution {
     );
 
     public int romanToInt(String s) {
-        char[] arr = s.toCharArray();
-        int i = 0, n = s.length();
-        int value = 0;
-        while (i < n) {
-            int curr = values.get(arr[i]);
-            int next = i == n - 1 ? 0 : values.get(arr[i + 1]);
+        int previous = 0;
+        int result = 0;
 
-            if (curr < next) {
-                value += (next - curr);
-                i += 2;
+        char[] arr = s.toCharArray();
+        int n = arr.length;
+
+        int i = 0;
+        while (i < n) {
+            char ch = arr[i];
+            int currentVal = values.get(ch);
+            int nextVal = i < n - 1 ? values.get(arr[i+1]) : Integer.MIN_VALUE;
+
+            if (nextVal > currentVal) {
+                result += (nextVal - currentVal);
+                i+=2;
             } else {
-                value += curr;
+                result += currentVal;
                 i++;
             }
         }
 
-
-        return value;
+        return result;
     }
 }

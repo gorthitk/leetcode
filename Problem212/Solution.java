@@ -1,92 +1,76 @@
-
-
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
-class Solution
-{
-    private int n;
-    private int m;
+class Solution {
 
-    public List<String> findWords(char[][] board, String[] words)
-    {
-        n = board.length;
-        m = board[0].length;
-        final Trie root = _buildTrie(words);
-        final List<String> result = new ArrayList<>();
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < m; j++)
-            {
-                _find(i, j, board, root, result);
-                if (result.size() == words.length)
-                {
-                    break;
+    static class TrieNode {
+        TrieNode[] children = new TrieNode[26];
+        boolean end;
+
+        static void addToTrie(String word, TrieNode parent) {
+            TrieNode current = parent;
+            for (char ch : word.toCharArray()) {
+                int idx = ch - 'a';
+                if (current.children[idx] == null) {
+                    current.children[idx] = new TrieNode();
                 }
+                current = current.children[idx];
             }
+            current.end = true;
         }
-        return result;
     }
 
-    private void _find(final int i, final int j, final char[][] board, final Trie dictionary, final List<String> result)
-    {
-        if (i < 0 || j < 0 || i >= n || j >= m)
-        {
+    public List<String> findWords(char[][] board, String[] wordsArr) {
+        TrieNode parent = new TrieNode();
+        for (String word : wordsArr) {
+            TrieNode.addToTrie(word, parent);
+        }
+        int n = board.length, m = board[0].length;
+
+        boolean[][] visited = new boolean[n][m];
+        Set<String> result = new HashSet<>();
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < m; j++) {
+                backtrack(i, j, "", board, visited, result, parent);
+            }
+        }
+        return new ArrayList<>(result);
+    }
+
+    private void backtrack(int i, int j, String current, char[][] board,
+                           boolean[][] visited, Set<String> result, TrieNode currentNode) {
+        if (currentNode.end) {
+            result.add(current);
+        }
+
+        if (i < 0 || j < 0 || i >= board.length || j >= board[0].length) {
             return;
         }
+
+        if (visited[i][j]) {
+            return;
+        }
+
         char ch = board[i][j];
-        if (ch > 'z' || ch < 'a')
-        {
+        TrieNode next = currentNode.children[ch - 'a'];
+        if (next == null) {
             return;
         }
-        final Trie next = dictionary.children[ch - 'a'];
-        if (next == null)
-        {
-            return;
-        }
-        if (next.isEnd && !next.added)
-        {
-            result.add(next.word);
-            next.added = true;
-        }
-        board[i][j] = '#';
-        _find(i + 1, j, board, next, result);
-        _find(i - 1, j, board, next, result);
-        _find(i, j + 1, board, next, result);
-        _find(i, j - 1, board, next, result);
-        board[i][j] = ch;
-    }
 
-    private Trie _buildTrie(final String[] words)
-    {
-        final Trie root = new Trie();
-        for (String word : words)
-        {
-            _populate(root, word);
-        }
-        return root;
-    }
+        // Set the next arguments.
+        visited[i][j] = true;
+        StringBuilder sb = new StringBuilder(current);
+        sb.append(ch);
 
-    private void _populate(final Trie root, String word)
-    {
-        Trie current = root;
-        for (char c : word.toCharArray())
-        {
-            if (current.children[c - 'a'] == null)
-            {
-                current.children[c - 'a'] = new Trie();
-            }
-            current = current.children[c - 'a'];
-        }
-        current.isEnd = true;
-        current.word = word;
-    }
+        backtrack(i - 1, j, sb.toString(), board, visited, result, next);
+        backtrack(i + 1, j, sb.toString(), board, visited, result, next);
+        backtrack(i, j - 1, sb.toString(), board, visited, result, next);
+        backtrack(i, j + 1, sb.toString(), board, visited, result, next);
 
-    class Trie
-    {
-        Trie[] children = new Trie[26];
-        boolean isEnd;
-        String word;
-        boolean added;
+        // Reset arguments.
+        visited[i][j] = false;
+        sb.deleteCharAt(sb.length() - 1);
     }
 }
