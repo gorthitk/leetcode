@@ -1,13 +1,36 @@
+class Solution {
+    public int minDistance(String word1, String word2) {
+        char[] arr1 = word1.toCharArray();
+        char[] arr2 = word2.toCharArray();
 
-public class Solution
-{
-    public int minDistance(String word1, String word2)
-    {
-        int[][] dp = new int[word1.length() + 1][word2.length() + 1];        //Number of Operation to Convert word1
-        // to Empty String. (Deletes Required)        for (int i = 0; i <= word1.length(); i++)        {
-        // dp[i][0] = i;        }        //Number of Operation to Convert Empty String to word2. (Inserts Required)
-        // for (int i = 0; i <= word2.length(); i++)        {            dp[0][i] = i;        }        for (int i =
-        // 1; i <= word1.length(); i++)        {            for (int j = 1; j <= word2.length(); j++)            {
-        // dp[i][j] = word1.charAt(i - 1) == word2.charAt(j - 1) ? dp[i - 1][j - 1] : Math.min(dp[i - 1][j - 1], Math
-        // .min(dp[i - 1][j], dp[i][j - 1])) + 1;            }        }        return dp[word1.length()][word2.length
-        // ()];    }}
+        Integer[][] memo = new Integer[arr1.length + 1][arr2.length + 1];
+
+        return findMin(arr1, arr2, arr1.length, arr2.length, memo);
+    }
+
+    private int findMin(char[] arr1, char[] arr2, int i, int j, Integer[][] memo) {
+        if (memo[i][j] != null) {
+            return memo[i][j];
+        }
+
+        if (i == 0 || j == 0) {
+            memo[i][j] = i == 0 ? j : i;
+            return memo[i][j];
+        }
+
+
+        if (arr1[i - 1] == arr2[j - 1]) {
+            memo[i][j] = findMin(arr1, arr2, i - 1, j - 1, memo);
+        } else {
+            int insert = findMin(arr1, arr2, i, j - 1, memo);
+            int delete = findMin(arr1, arr2, i - 1, j, memo);
+            int replace = findMin(arr1, arr2, i - 1, j - 1, memo);
+
+
+            memo[i][j] = 1 + Math.min(insert, Math.min(delete, replace));
+        }
+
+
+        return memo[i][j];
+    }
+}

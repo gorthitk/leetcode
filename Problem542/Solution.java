@@ -1,35 +1,48 @@
+import java.util.LinkedList;
+import java.util.Queue;
 
-public class Solution
-{
-    public int[][] updateMatrix(int[][] matrix)
-    {
-        int row = matrix.length;
-        int column = matrix[0].length;
-        int max = row * column;
-        for (int i = 0; i < row; i++)
-        {
-            for (int j = 0; j < column; j++)
-            {
-                if (matrix[i][j] != 0)
-                {
-                    int up = i > 0 ? matrix[i - 1][j] : max;
-                    int left = j > 0 ? matrix[i][j - 1] : max;
-                    matrix[i][j] = Math.min(up, left) + 1;
+class Solution {
+    private static final int[][] DIRECTIONS = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+    public int[][] updateMatrix(int[][] mat) {
+        int n = mat.length, m = mat[0].length;
+        int[][] result = new int[n][m];
+
+        Queue<int[]> queue = new LinkedList<>();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (mat[i][j] == 0) {
+                    queue.add(new int[]{i, j});
+                } else {
+                    result[i][j] = Integer.MAX_VALUE;
                 }
             }
         }
-        for (int i = row - 1; i >= 0; i--)
-        {
-            for (int j = column - 1; j >= 0; j--)
-            {
-                if (matrix[i][j] != 0)
-                {
-                    int down = i < row - 1 ? matrix[i + 1][j] : max;
-                    int right = j < column - 1 ? matrix[i][j + 1] : max;
-                    matrix[i][j] = Math.min(Math.min(down, right) + 1, matrix[i][j]);
+
+
+        int steps = 0;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+
+            for (int i = 0; i < size; i++) {
+                int[] curr = queue.poll();
+                int x = curr[0], y = curr[1];
+
+                for (int[] dir : DIRECTIONS) {
+                    int a = x + dir[0], b = y + dir[1];
+
+                    if (a >= 0 && a < n && b >= 0 && b < m && result[a][b] == Integer.MAX_VALUE) {
+                        result[a][b] = 1 + steps;
+                        queue.add(new int[]{a, b});
+                    }
                 }
             }
+
+            steps++;
         }
-        return matrix;
+
+
+        return result;
     }
 }

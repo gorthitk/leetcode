@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Main {
 
     private static String getBitMask(int n) {
@@ -13,6 +16,7 @@ public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(getBitMask(2));
+
+        System.out.println(solution.totalHammingDistance(new int[]{4, 14, 2}));
     }
 }

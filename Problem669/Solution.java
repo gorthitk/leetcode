@@ -1,22 +1,19 @@
+class Solution {
+    public TreeNode trimBST(TreeNode root, int low, int high) {
+        if (root == null) {
+            return null;
+        }
 
-class Solution
-{
-    public TreeNode trimBST(TreeNode root, int L, int R)
-    {
-        if (root == null)
-        {
+        if (root.val >= low && root.val <= high) {
+            root.left = trimBST(root.left, low, high);
+            root.right = trimBST(root.right, low, high);
+
             return root;
         }
-        if (root.val > R)
-        {
-            return trimBST(root.left, L, R);
+
+        if(root.val < low) {
+            return trimBST(root.right, low, high);
         }
-        if (root.val < L)
-        {
-            return trimBST(root.right, L, R);
-        }
-        root.left = trimBST(root.left, L, R);
-        root.right = trimBST(root.right, L, R);
-        return root;
+        return trimBST(root.left, low, high);
     }
 }

@@ -1,16 +1,17 @@
+class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        if (head == null) {
+            return null;
+        }
 
-public class Solution
-{
-    public ListNode removeElements(ListNode head, int val)
-    {
-        ListNode dummy = new ListNode(-1);
-        ListNode p = dummy;
-        while (head != null)
-        {
-            if (head.val != val)
-            {
-                p.next = head;
-                p = p.next;
-            }
-            head = head.next;
-        }        // Tail        if (p.next != null && p.next.val == val)            p.next = null;        return dummy.next;    }}
+        ListNode next = removeElements(head.next, val);
+
+        if (head.val == val) {
+            return next;
+        }
+
+        head.next = next;
+
+        return head;
+    }
+}

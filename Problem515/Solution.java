@@ -1,37 +1,24 @@
-
-
-import java.util.*;
-
-public class Solution
-{
-    public List<Integer> largestValues(TreeNode root)
-    {
+class Solution {
+    public List<Integer> largestValues(TreeNode root) {
         List<Integer> result = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        if (root != null)
-        {
-            queue.add(root);
+        if (root == null) {
+            return result;
         }
-        while (!queue.isEmpty())
-        {
-            Queue<TreeNode> nxtQueue = new LinkedList<>();
-            int maxVal = Integer.MIN_VALUE;
-            while (!queue.isEmpty())
-            {
-                TreeNode node = queue.poll();
-                maxVal = Math.max(maxVal, node.val);
-                if (node.left != null)
-                {
-                    nxtQueue.add(node.left);
-                }
-                if (node.right != null)
-                {
-                    nxtQueue.add(node.right);
-                }
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()) {
+            int size = q.size();
+            int max = Integer.MIN_VALUE;
+            while (size-- > 0) {
+                TreeNode curr = q.poll();
+                max = Math.max(curr.val, max);
+
+                if (curr.left != null) q.add(curr.left);
+                if (curr.right != null) q.add(curr.right);
             }
-            result.add(maxVal);
-            queue = nxtQueue;
+            result.add(max);
         }
+
         return result;
     }
 }
