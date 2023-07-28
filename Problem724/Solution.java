@@ -1,22 +1,20 @@
-
-class Solution
-{
-    public int pivotIndex(int[] nums)
-    {
-        int sum = 0;
-        for (int num : nums)
-        {
-            sum += num;
+class Solution {
+    public int pivotIndex(int[] nums) {
+        int totalSum = 0;
+        for (int num : nums) {
+            totalSum += num;
         }
-        int left = 0;
-        for (int i = 0; i < nums.length; i++)
-        {
-            left = left + (i == 0 ? 0 : nums[i - 1]);
-            if (left == sum - left - nums[i])
-            {
+
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            totalSum -= nums[i];
+            if (sum == totalSum) {
                 return i;
             }
+
+            sum += nums[i];
         }
+
         return -1;
     }
 }

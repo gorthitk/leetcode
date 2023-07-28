@@ -1,70 +1,41 @@
+class Solution {
+    private static final String START_BOLD = "<b>";
+    private static final String END_BOLD = "</b>";
 
+    public String addBoldTag(String s, String[] words) {
+        int n = s.length();
+        char[] arr = s.toCharArray();
 
-import java.util.*;
+        boolean[] isBold = new boolean[n];
 
-public class Solution
-{
-    public String addBoldTag(String s, String[] dict)
-    {
-        StringBuilder res = new StringBuilder();
-        List<int[]> intervals = new ArrayList<int[]>();
-        for (String dic : dict)
-        {
-            int idx = s.indexOf(dic);
-            if (idx == -1)
-            {
-                continue;
-            }
-            while (idx != -1)
-            {
-                intervals.add(new int[]{idx, idx + dic.length()});
-                idx = s.indexOf(dic, idx + 1);
+        for (String word : words) {
+            int start = s.indexOf(word);
+            while (start != -1) {
+                for (int i = start; i < start + word.length(); i++) {
+                    isBold[i] = true;
+                }
+
+                start = s.indexOf(word, start + 1);
             }
         }
-        List<int[]> mergedIntervals = merge(intervals);
-        int start = 0;
-        for (int[] interval : mergedIntervals)
-        {
-            res.append(s.substring(start, interval[0]));
-            res.append("<b>");
-            res.append(s.substring(interval[0], interval[1]));
-            res.append("</b>");
-            start = interval[1];
-        }
-        res.append(s.substring(start, s.length()));
-        return res.toString();
-    }
 
-    private List<int[]> merge(List<int[]> intervals)
-    {
-        if (intervals.isEmpty() || intervals.size() < 2)
-        {
-            return intervals;
-        }
-        Collections.sort(intervals, new Comparator<int[]>()
-        {
-            @Override
-            public int compare(int[] o1, int[] o2)
-            {
-                return o1[0] - o2[0];
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            if (isBold[i] && (i == 0 || !isBold[i - 1])) {
+                sb.append(START_BOLD);
             }
-        });
-        List<int[]> mergedIntervals = new ArrayList<>();
-        int[] prev = intervals.get(0);
-        for (int i = 1; i < intervals.size(); i++)
-        {
-            int[] current = intervals.get(i);
-            if (current[0] <= prev[1])
-            {
-                prev[1] = Math.max(prev[1], current[1]);
-            }
-            else
-            {
-                mergedIntervals.add(prev);
-                prev = current;
+
+            sb.append(arr[i]);
+
+
+            if (isBold[i] && (i == n - 1 || !isBold[i + 1])) {
+                sb.append(END_BOLD);
             }
         }
-        mergedIntervals.add(prev);
-        return mergedIntervals;
+
+
+        return sb.toString();
+
     }
 }

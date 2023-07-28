@@ -1,34 +1,35 @@
 class Solution {
     public boolean validWordAbbreviation(String word, String abbr) {
-        int idx = 0;
+        int i = 0, j = 0;
+        while (i < word.length() && j < abbr.length()) {
+            char ch1 = abbr.charAt(j);
+            if (isDigit(ch1)) {
+                int num = 0;
+                while (j < abbr.length() && isDigit(abbr.charAt(j))) {
+                    if (num == 0 && abbr.charAt(j) == '0') {
+                        return false;
+                    }
+                    num = num * 10 + (abbr.charAt(j) - '0');
+                    j++;
+                }
 
-        int num = 0;
-        for (int i = 0; i < abbr.length(); i++) {
-            char chr = abbr.charAt(i);
-            if (isDigit(chr)) {
-                num = num * 10 + (chr - '0');
-                // leading zeros.
-                if (num == 0) {
+                if (i + num > word.length()) {
                     return false;
                 }
+                i += num;
             } else {
-                idx += num;
-                num = 0;
-                if (idx >= word.length() || chr != word.charAt(idx++)) {
+                if (word.charAt(i) != ch1) {
                     return false;
                 }
+                i++;
+                j++;
             }
         }
 
-        if (num != 0) {
-            idx += num;
-        }
-
-        return idx == word.length();
+        return i == word.length() && j == abbr.length();
     }
 
-
-    private static boolean isDigit(char ch) {
-        return ch >= '0' && ch <= '9';
+    private boolean isDigit(char ch1) {
+        return ch1 >= '0' && ch1 <= '9';
     }
 }

@@ -1,19 +1,24 @@
+class Solution {
+    public int characterReplacement(String s, int k) {
+        int result = 0;
 
-public class Solution
-{
-    public int characterReplacement(String s, int k)
-    {
-        int maxLen = 0, maxCount = 0, start = 0;
-        int[] count = new int[26];
-        for (int end = 0; end < s.length(); end++)
-        {
-            maxCount = Math.max(maxCount, ++count[s.charAt(end) - 'A']);
-            while (end - start - maxCount + 1 > k)
-            {
-                count[s.charAt(start++) - 'A']--;
+        int[] counts = new int[26];
+        int maxCount = 0, start = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            counts[ch - 'A']++;
+            maxCount = Math.max(maxCount, counts[ch - 'A']);
+            int len = i - start + 1;
+            if (len - maxCount > k) {
+                char chStart = s.charAt(start);
+                counts[chStart - 'A']--;
+                start++;
             }
-            maxLen = Math.max(maxLen, end - start + 1);
+
+            result = Math.max(result, i - start + 1);
         }
-        return maxLen;
+
+
+        return result;
     }
 }

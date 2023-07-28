@@ -1,28 +1,23 @@
-import java.util.HashSet;
-import java.util.Set;
-
 class Solution {
     public boolean checkSubarraySum(int[] nums, int k) {
-        int sum = 0;
-        Set<Integer> sumByIdx  = new HashSet<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
 
+        int sum = 0;
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
 
-            if (sum % k == 0) {
+            int remainder = sum % k;
 
-                if (sum == 0 && i > 1) {
+            if (map.containsKey(remainder)) {
+                int len = i - map.get(remainder);
+                if (len >= 2) {
                     return true;
                 }
-
-                return false;
-            }
-
-            if (!sumByIdx.add(sum % k)) {
-                return true;
+            } else {
+                map.put(remainder, i);
             }
         }
-
 
         return false;
     }

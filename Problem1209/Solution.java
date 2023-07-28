@@ -1,22 +1,33 @@
 class Solution {
     public String removeDuplicates(String s, int k) {
-        int start = 0;
         int n = s.length();
-        StringBuilder sb = new StringBuilder(s);
-        int[] count = new int[n];
 
-        for (int i = 0; i < sb.length(); i++) {
-            if (i == 0 || sb.charAt(i) != sb.charAt(i - 1)) {
-                count[i] = 1;
-            } else {
-                count[i] = count[i-1] + 1;
-                if (count[i] == k) {
-                    sb.delete(i - k + 1, i + 1);
-                    i = i - k;
+        Stack<int[]> stack = new Stack<>();
+        // int[] -> alphabet idx, count
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            int idx = ch - 'a';
+            if (!stack.isEmpty() && stack.peek()[0] == idx) {
+                int[] current = stack.pop();
+                if (current[1] == k - 1) {
+                    continue;
                 }
+                stack.add(new int[] {idx, 1 + current[1]});
+            } else {
+                stack.add(new int[] {idx, 1});
             }
         }
 
-        return sb.toString();
+        StringBuilder sb = new StringBuilder();
+        while(!stack.isEmpty()) {
+            int[] current = stack.pop();
+            int idx = current[0], count = current[1];
+
+            for (int i = 1; i <= count; i++) {
+                sb.append((char)('a' + idx));
+            }
+        }
+
+        return sb.reverse().toString();
     }
 }

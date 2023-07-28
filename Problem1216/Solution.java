@@ -2,20 +2,14 @@ class Solution {
     public boolean isValidPalindrome(String s, int k) {
         int n = s.length();
         Integer[][] memo = new Integer[n][n];
-        char[] arr = s.toCharArray();
+        backtrack(s.toCharArray(), 0, n - 1, memo);
 
-        return isValidPalindrome(arr, 0, n - 1, memo) <= k;
+        return memo[0][n-1] <= k;
     }
 
-    private int isValidPalindrome(char[] arr, int i, int j, Integer[][] memo) {
-        int n = arr.length;
-
-        if (i == j) {
+    private int backtrack(char[] arr, int i, int j, Integer[][] memo) {
+        if (i > j) {
             return 0;
-        }
-
-        if (i == j - 1) {
-            return arr[i] == arr[j] ? 0 : 1;
         }
 
         if (memo[i][j] != null) {
@@ -23,13 +17,15 @@ class Solution {
         }
 
         if (arr[i] == arr[j]) {
-            return isValidPalindrome(arr, i + 1, j - 1, memo);
+            memo[i][j] =  backtrack(arr, i + 1, j - 1, memo);
+            return memo[i][j];
         }
 
+
         memo[i][j] = 1 + Math.min(
-                isValidPalindrome(arr, i + 1, j, memo),
-                isValidPalindrome(arr, i, j - 1, memo)
-        );;
+                backtrack(arr, i, j - 1, memo),
+                backtrack(arr, i + 1, j, memo)
+        );
 
         return memo[i][j];
     }
